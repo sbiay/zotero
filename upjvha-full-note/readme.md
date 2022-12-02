@@ -8,11 +8,11 @@ Exemple : Aimoin de Fleury, *Vita et passio sancti Abbonis*, éd. Robert Henri B
 
 #### Type de document Zotero à sélectionner
 
-Entrée de dictionnaire
+***Entrée de dictionnaire***
 
 #### Renseignement des champs
 
-- Titre de la source éditée : champ **Titre**
-- Editeur/traducteur de la source : champs **Editeur** ou **Traducteur**
-- Titre du recueil : champ **Titre du dict.**
-- Responsable scientifique de la publication : champ **Directeur de coll.**
+- Pour le titre de la source éditée : champ ***Titre***
+- Pour l'éditeur/traducteur de la source : champs ***Editeur*** ou ***Traducteur***
+- Pour le titre du recueil : champ ***Titre du dict.***
+- Pour le responsable scientifique de la publication : champ ***Directeur de coll.***
