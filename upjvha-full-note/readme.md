@@ -10,8 +10,11 @@ Plan :
 	1. [Sources éditées dans un ouvrage (monographie, recueil, etc.)](#t1-1)
 	2. [Entrée de dictionnaire](#t1-2)
 	3. [Notice dans une ressource nativement numérique](#t1-3)
+2. [Pour signaler un problème](#t2)
 
 [comment]: <> (FINET)
+
+
 
 <a id='t1'/>
 
@@ -55,15 +58,18 @@ Type de document Zotero à sélectionner : ***Page web***.
 
 **NB** : les notices ont rarement des auteurs, et quand bien même, c'est généralement le nom de l'**institution reponsable de la ressource** qui doit être renseigné dans le champ ***Auteur***.
 
+
+<a id='t2'/>
+
 # Pour signaler un problème
 
-Si le style ne se comporte pas comme vous l'attendez, je vous remercie de me l'indiquer par courrier électronique selon les modalités suivantes :
+Si le style ne se comporte pas comme vous l'attendez, je vous remercie de me l'indiquer par courrier électronique selon les modalités suivantes :
 
-- *Destinataire :* sebastien.biay@u-picardie.fr
-- *Objet :* Style csl upjv-ha-full-note
-- *Contenu du message*, merci d'y faire figurer : 
+- *Destinataire :* sebastien.biay@u-picardie.fr
+- *Objet :* Style csl upjv-ha-full-note
+- *Contenu du message*, merci d'y faire figurer : 
 
 	1. La référence telle que Zotero l'affiche dans votre traitement de texte
 	2. La référence telle que vous voudriez la voir dans votre traitement de texte
 
-- *Pièce jointe :* export de la référence concernée au format BibteX
+- *Pièce jointe :* export de la référence concernée au format BibteX
