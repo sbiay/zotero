@@ -339,13 +339,27 @@
   </macro>
   <macro name="date">
     <choose>
-      <if variable="issued">
-        <date form="text" variable="issued" prefix=", ">
-          <date-part name="year" range-delimiter="-"/>
-        </date>
+      <!--Si le site web n'a pas de date, on n'écrit pas [s.d.]-->
+      <if type="webpage" match="any">
+        <choose>
+          <if variable="issued">
+            <date form="text" variable="issued" prefix=", ">
+              <date-part name="year" range-delimiter="-"/>
+            </date>
+          </if>
+        </choose>
       </if>
       <else>
-        <text value="[s.d.]" prefix=", "/>
+        <choose>
+          <if variable="issued">
+            <date form="text" variable="issued" prefix=", ">
+              <date-part name="year" range-delimiter="-"/>
+            </date>
+          </if>
+          <else>
+            <text value="[s.d.]" prefix=", "/>
+          </else>
+        </choose>
       </else>
     </choose>
   </macro>
@@ -552,12 +566,12 @@
           <text variable="URL" text-decoration="none" prefix=" URL&#160;: "/>
         </if>
         <else>
-          <text variable="URL" text-decoration="none" prefix=". URL&#160;: "/>
+          <text variable="URL" text-decoration="none" prefix=", URL&#160;: "/>
         </else>
       </choose>
     </group>
     <group delimiter=" " font-style="normal">
-      <text value="Consulté le" suffix=" " prefix=". "/>
+      <text value="consulté le" suffix=" " prefix=", "/>
       <date variable="accessed" form="text">
         <date-part name="day"/>
         <date-part name="month"/>
