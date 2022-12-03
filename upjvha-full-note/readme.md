@@ -10,6 +10,7 @@ Plan :
 	1. [Sources éditées dans un ouvrage (monographie, recueil, etc.)](#t1-1)
 	2. [Entrée de dictionnaire](#t1-2)
 	3. [Notice dans une ressource nativement numérique](#t1-3)
+	4. [Ressource nativement numérique](#t1-4)
 2. [Pour signaler un problème](#t2)
 
 [comment]: <> (FINET)
@@ -27,7 +28,7 @@ Plan :
 
 L'adaptation de l'usage de Zotero est nécessaire afin d'obtenir une typographie très spécifique, où le titre de la source ainsi que le titre de l'ouvrage sont en italique.
 
-Éxemple : Aimoin de Fleury, *Vita et passio sancti Abbonis*, éd. Robert Henri Bautier et Gillette Tyl-Labory, dans *L’abbaye de Fleury en l’an mil*, éd. Robert-Henri Bautier, Gillette Tyl-Labory, Anselme Davril, et Lin Donnat, Paris, CNRS éd, 2004 (Sources d’histoire médiévale, 32), p. 25‑38.
+Exemple : Aimoin de Fleury, *Vita et passio sancti Abbonis*, éd. Robert Henri Bautier et Gillette Tyl-Labory, dans *L’abbaye de Fleury en l’an mil*, éd. Robert-Henri Bautier, Gillette Tyl-Labory, Anselme Davril, et Lin Donnat, Paris, CNRS éd, 2004 (Sources d’histoire médiévale, 32), p. 25‑38.
 
 Type de document Zotero à sélectionner : ***Entrée de dictionnaire***
 
@@ -52,11 +53,18 @@ Type de document Zotero à sélectionner : ***Article d'encyclopédie***.
 
 ## Notice dans une ressource nativement numérique
 
-Éxemple : Bibliothèque nationale de France, « *Calendaria et tabulae. Macrobius, Commentarii in Somnium Scipionis* [Département des Manuscrits, Latin 7299] », *Gallica*, URL : https://gallica.bnf.fr/ark:/12148/btv1b10542286q, consulté le 1 décembre 2022.
+Exemple : Bibliothèque nationale de France, « *Calendaria et tabulae. Macrobius, Commentarii in Somnium Scipionis* [Département des Manuscrits, Latin 7299] », *Gallica*, URL : https://gallica.bnf.fr/ark:/12148/btv1b10542286q, consulté le 1 décembre 2022.
 
 Type de document Zotero à sélectionner : ***Page web***.
 
 **NB** : les notices ont rarement des auteurs, et quand bien même, c'est généralement le nom de l'**institution reponsable de la ressource** qui doit être renseigné dans le champ ***Auteur***.
+
+
+<a id='t1-4'/>
+
+## Ressource nativement numérique
+
+Le type de document *Page web* étant dévolu aux notices contenues dans une ressource, pour citer une ressource en tant que telle, on optera pour le type de document ***Livre***.
 
 
 <a id='t2'/>
