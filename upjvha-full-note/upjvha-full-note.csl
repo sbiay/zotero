@@ -55,23 +55,49 @@
     </choose>
   </macro>
   <macro name="editor-bib">
-    <names variable="editor" prefix=", ">
-      <label form="short" suffix=" "/>
-      <name 
-        font-style="normal" and="text"
-        delimiter-precedes-et-al="never" 
-        delimiter-precedes-last="never" et-al-min="4" et-al-use-first="3">
-        <name-part name="family" font-variant="small-caps"/>
-      </name>
-    </names>
+    <choose>
+      <!--Pour le type article de colloque, les éditeurs scientifiques sonté précédés de la mention dir., dans l'éventualités où les actes n'auraient pas été publiés-->
+      <if type="paper-conference">
+        <names variable="editor" prefix=", dir. ">
+          <name 
+            font-style="normal" and="text"
+            delimiter-precedes-et-al="never" 
+            delimiter-precedes-last="never" et-al-min="4" et-al-use-first="3">
+            <name-part name="family" font-variant="small-caps"/>
+          </name>
+        </names>
+  </if>
+  <else>
+        <names variable="editor" prefix=", ">
+          <label form="short" suffix=" "/>
+          <name 
+            font-style="normal" and="text"
+            delimiter-precedes-et-al="never" 
+            delimiter-precedes-last="never" et-al-min="4" et-al-use-first="3">
+            <name-part name="family" font-variant="small-caps"/>
+          </name>
+        </names>
+  </else>
+  </choose>
   </macro>
   <macro name="editor">
+    <choose>
+      <if type="paper-conference">
+    <names variable="editor" prefix=", dir. ">
+      <name 
+        font-style="normal" and="text"
+        et-al-min="4" et-al-use-first="3" initialize-with="."/>
+    </names>     
+      </if>
+      <else>
     <names variable="editor" prefix=", ">
       <label form="short" suffix=" "/>
       <name 
         font-style="normal" and="text"
         et-al-min="4" et-al-use-first="3" initialize-with="."/>
     </names>
+  </else>
+</choose>
   </macro>
   <macro name="translator-bib">
     <names variable="translator" prefix=", ">
@@ -140,13 +166,21 @@
           <text variable="genre" prefix=" "/>
         </group>
       </else-if>
-      <else-if type="entry-encyclopedia paper-conference chapter" match="any">
+      <else-if type="entry-encyclopedia chapter" match="any">
         <group>
-          <group suffix=",">
+          <group suffix=", ">
             <text variable="title" text-case="capitalize-first" quotes="true"/>
           </group>
-          <text value="dans" font-style="normal" prefix=" " suffix=" "/>
           <text variable="container-title" text-case="capitalize-first" font-style="italic"/>
+        </group>
+      </else-if>
+      <else-if type="paper-conference" match="any">
+        <group>
+          <group suffix=", ">
+            <text variable="title" text-case="capitalize-first" quotes="true"/>
+          </group>
+          <text variable="container-title" text-case="capitalize-first" font-style="italic"/>
+          <text macro="event"/>
         </group>
       </else-if>
       <else-if type="post-weblog post webpage" match="any">
@@ -190,7 +224,6 @@
         font-style="normal" and="text"/>
     </names>
   </macro>
-
   <macro name="edition">
     <choose>
       <if type="book graphic report entry-dictionary entry-encyclopedia chapter speech paper-conference" match="any">
@@ -243,14 +276,12 @@
         <choose>
           <if variable="genre" match="none">
             <group delimiter=" " prefix=", ">
-              <text term="presented at" suffix=" "/>
               <text variable="event"/>
             </group>
           </if>
           <else>
             <group delimiter=" " prefix=", ">
               <text variable="genre"/>
-              <text term="presented at"/>
               <text variable="event"/>
             </group>
           </else>
@@ -263,10 +294,10 @@
       <if type="article-newspaper paper-conference" match="any">
         <choose>
           <if variable="publisher-place">
-            <text variable="publisher-place" prefix=", " suffix=", "/>
+            <text variable="publisher-place" prefix=", "/>
           </if>
           <else>
-            <text value="[s.l.]" prefix=", " suffix=", "/>
+            <text value="[s.l.]" prefix=", "/>
           </else>
         </choose>
       </if>
@@ -299,7 +330,7 @@
     </choose>
     -->
     <choose>
-      <if type="book chapter entry-dictionary entry-encyclopedia paper-conference" match="any">
+      <if type="book chapter entry-dictionary entry-encyclopedia" match="any">
         <choose>
           <if variable="publisher">
             <text variable="publisher" prefix=", "/>
@@ -309,7 +340,14 @@
           </else>
         </choose>
       </if>
-      <else-if type="thesis broadcast" match="any"/>
+      <else-if type="thesis broadcast paper-conference" match="any">
+        <!--Pour ces types de documents, on n'affiche pas [s.n.] en l'absence d'une maison d'édition (comm. dans un colloque non publié)-->
+        <choose>
+          <if variable="publisher">
+            <text variable="publisher" prefix=", "/>
+          </if>
+        </choose>
+      </else-if>
     </choose>
   </macro>
   <macro name="collection">
@@ -641,7 +679,6 @@
           <text macro="source-container-title"/>
           <text macro="source-container-editor"/>
           <text macro="edition"/>
-          <text macro="event"/>
           <text macro="place"/>
           <text macro="yearpage"/>
           <text macro="accessed"/>
@@ -668,7 +705,6 @@
         </if>
       </choose>
       <text macro="edition"/>
-      <text macro="event"/>
       <text macro="place"/>
       <text macro="publisher"/>
       <text macro="year-bib"/>

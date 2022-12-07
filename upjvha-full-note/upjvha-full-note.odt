@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:officeooo="http://openoffice.org/2009/office" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rpt="http://openoffice.org/2005/report" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:xforms="http://www.w3.org/2002/xforms" office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><dc:date>2022-12-03T14:42:02.479938687</dc:date><meta:editing-duration>PT59M58S</meta:editing-duration><meta:editing-cycles>14</meta:editing-cycles><meta:generator>LibreOffice/7.3.7.2$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="3" meta:paragraph-count="56" meta:word-count="630" meta:character-count="4136" meta:non-whitespace-character-count="3562"/><meta:user-defined meta:name="ZOTERO_PREF_1">&lt;data data-version=&quot;3&quot; zotero-version=&quot;6.0.18&quot;&gt;&lt;session id=&quot;PrVt5KFx&quot;/&gt;&lt;style id=&quot;mon-odt-perso&quot; hasBibliography=&quot;1&quot; bibliographyStyleHasBeenSet=&quot;0&quot;/&gt;&lt;prefs&gt;&lt;pref name=&quot;fieldType&quot; value=&quot;ReferenceMark&quot;/&gt;&lt;pref name=&quot;noteType&quot; value=&quot;1&quot;/&gt;&lt;/prefs&gt;&lt;/data&gt;</meta:user-defined></office:meta>
+ <office:meta><dc:date>2022-12-07T11:09:01.207148537</dc:date><meta:editing-duration>PT1H4M8S</meta:editing-duration><meta:editing-cycles>15</meta:editing-cycles><meta:generator>LibreOffice/7.3.7.2$Linux_X86_64 LibreOffice_project/30$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="4" meta:paragraph-count="64" meta:word-count="753" meta:character-count="4992" meta:non-whitespace-character-count="4303"/><meta:user-defined meta:name="ZOTERO_PREF_1">&lt;data data-version=&quot;3&quot; zotero-version=&quot;6.0.18&quot;&gt;&lt;session id=&quot;PrVt5KFx&quot;/&gt;&lt;style id=&quot;mon-odt-perso&quot; hasBibliography=&quot;1&quot; bibliographyStyleHasBeenSet=&quot;0&quot;/&gt;&lt;prefs&gt;&lt;pref name=&quot;fieldType&quot; value=&quot;ReferenceMark&quot;/&gt;&lt;pref name=&quot;noteType&quot; value=&quot;1&quot;/&gt;&lt;/prefs&gt;&lt;/data&gt;</meta:user-defined></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">9393</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">40481</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
-   <config:config-item config:name="ViewAreaWidth" config:type="long">24940</config:config-item>
-   <config:config-item config:name="ViewAreaHeight" config:type="long">13496</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">23931</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">14141</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">8789</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">83349</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">14411</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">42833</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">9393</config:config-item>
-     <config:config-item config:name="VisibleRight" config:type="long">24938</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">22886</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">40481</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">23929</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">54621</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -88,7 +88,7 @@
    <config:config-item config:name="ChartAutoUpdate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="PrinterSetup" config:type="base64Binary"/>
    <config:config-item config:name="AddParaTableSpacingAtStart" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">1261769</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">1388506</config:config-item>
    <config:config-item config:name="EmbeddedDatabaseName" config:type="string"/>
    <config:config-item config:name="FieldAutoUpdate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="OutlineLevelYieldsNumbering" config:type="boolean">false</config:config-item>
@@ -153,7 +153,7 @@
  <office:styles>
   <style:default-style style:family="graphic">
    <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:start-line-spacing-horizontal="0.283cm" draw:start-line-spacing-vertical="0.283cm" draw:end-line-spacing-horizontal="0.283cm" draw:end-line-spacing-vertical="0.283cm" style:flow-with-text="false"/>
-   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:writing-mode="lr-tb" style:font-independent-line-spacing="false">
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:font-independent-line-spacing="false">
     <style:tab-stops/>
    </style:paragraph-properties>
    <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:font-name="Liberation Serif" fo:font-size="12pt" fo:language="fr" fo:country="FR" style:letter-kerning="true" style:font-name-asian="Source Han Sans CN Regular" style:font-size-asian="10.5pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="Lohit Devanagari1" style:font-size-complex="12pt" style:language-complex="hi" style:country-complex="IN"/>
@@ -345,108 +345,123 @@
   <style:style style:name="P6" style:family="paragraph" style:parent-style-name="Heading_20_3">
    <style:text-properties officeooo:rsid="000a4944" officeooo:paragraph-rsid="001194f9"/>
   </style:style>
-  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Heading_20_1">
+  <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Heading_20_3">
+   <style:text-properties officeooo:rsid="000a4944" officeooo:paragraph-rsid="001340c9"/>
+  </style:style>
+  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Heading_20_1">
    <style:text-properties officeooo:rsid="000b25b4" officeooo:paragraph-rsid="000b25b4"/>
   </style:style>
-  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Heading_20_3">
+  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Heading_20_3">
    <style:text-properties officeooo:rsid="000b25b4" officeooo:paragraph-rsid="000b25b4"/>
   </style:style>
-  <style:style style:name="P9" style:family="paragraph" style:parent-style-name="Heading_20_2">
+  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Heading_20_2">
    <style:text-properties officeooo:paragraph-rsid="000a4944"/>
   </style:style>
-  <style:style style:name="P10" style:family="paragraph" style:parent-style-name="Heading_20_3">
+  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Heading_20_3">
    <style:text-properties officeooo:paragraph-rsid="000a4944"/>
   </style:style>
-  <style:style style:name="P11" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:paragraph-rsid="000a4944"/>
-  </style:style>
-  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Heading_20_1">
+  <style:style style:name="P12" style:family="paragraph" style:parent-style-name="Standard">
    <style:text-properties officeooo:paragraph-rsid="000a4944"/>
   </style:style>
   <style:style style:name="P13" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:text-properties officeooo:paragraph-rsid="000a4944"/>
+  </style:style>
+  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Heading_20_1">
    <style:text-properties officeooo:rsid="000d0b4f" officeooo:paragraph-rsid="000d0b4f"/>
   </style:style>
-  <style:style style:name="P14" style:family="paragraph" style:parent-style-name="Heading_20_2">
+  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Heading_20_2">
    <style:text-properties officeooo:rsid="000d0b4f" officeooo:paragraph-rsid="000d0b4f"/>
   </style:style>
-  <style:style style:name="P15" style:family="paragraph" style:parent-style-name="Heading_20_3">
+  <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Heading_20_3">
    <style:text-properties officeooo:rsid="000d0b4f" officeooo:paragraph-rsid="000d0b4f"/>
   </style:style>
-  <style:style style:name="P16" style:family="paragraph" style:parent-style-name="Heading_20_2">
-   <style:text-properties officeooo:paragraph-rsid="000d0b4f"/>
-  </style:style>
-  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Standard">
+  <style:style style:name="P17" style:family="paragraph" style:parent-style-name="Heading_20_2">
    <style:text-properties officeooo:paragraph-rsid="000d0b4f"/>
   </style:style>
   <style:style style:name="P18" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:paragraph-rsid="000d0b4f"/>
+  </style:style>
+  <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Standard">
    <style:text-properties officeooo:paragraph-rsid="000fe9bf"/>
   </style:style>
-  <style:style style:name="P19" style:family="paragraph" style:parent-style-name="Heading_20_1">
+  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Heading_20_1">
    <style:text-properties officeooo:rsid="001194f9" officeooo:paragraph-rsid="001194f9"/>
   </style:style>
-  <style:style style:name="P20" style:family="paragraph" style:parent-style-name="Standard">
+  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Standard">
    <style:text-properties officeooo:rsid="001194f9" officeooo:paragraph-rsid="001194f9"/>
   </style:style>
-  <style:style style:name="P21" style:family="paragraph" style:parent-style-name="Heading_20_1">
+  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Heading_20_1">
    <style:text-properties officeooo:paragraph-rsid="000b25b4"/>
   </style:style>
-  <style:style style:name="P22" style:family="paragraph" style:parent-style-name="Heading_20_3">
+  <style:style style:name="P23" style:family="paragraph" style:parent-style-name="Heading_20_3">
    <style:text-properties officeooo:paragraph-rsid="001194f9"/>
   </style:style>
-  <style:style style:name="P23" style:family="paragraph" style:parent-style-name="Standard">
+  <style:style style:name="P24" style:family="paragraph" style:parent-style-name="Standard">
    <style:text-properties officeooo:paragraph-rsid="001194f9"/>
   </style:style>
-  <style:style style:name="P24" style:family="paragraph" style:parent-style-name="Heading_20_1">
-   <style:text-properties officeooo:rsid="000a4944" officeooo:paragraph-rsid="000a4944"/>
-  </style:style>
-  <style:style style:name="P25" style:family="paragraph" style:parent-style-name="Heading_20_1">
-   <style:text-properties officeooo:rsid="001194f9" officeooo:paragraph-rsid="001194f9"/>
+  <style:style style:name="P25" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:rsid="001340c9" officeooo:paragraph-rsid="001340c9"/>
   </style:style>
   <style:style style:name="P26" style:family="paragraph" style:parent-style-name="Heading_20_1">
-   <style:text-properties officeooo:rsid="000b25b4" officeooo:paragraph-rsid="000b25b4"/>
+   <style:text-properties officeooo:rsid="000a4944" officeooo:paragraph-rsid="000a4944"/>
   </style:style>
   <style:style style:name="P27" style:family="paragraph" style:parent-style-name="Heading_20_1">
-   <style:text-properties officeooo:rsid="000d0b4f" officeooo:paragraph-rsid="000d0b4f"/>
+   <style:text-properties officeooo:rsid="001194f9" officeooo:paragraph-rsid="001194f9"/>
   </style:style>
-  <style:style style:name="P28" style:family="paragraph" style:parent-style-name="Heading_20_2">
-   <style:text-properties officeooo:rsid="000a4944" officeooo:paragraph-rsid="000a4944"/>
-  </style:style>
-  <style:style style:name="P29" style:family="paragraph" style:parent-style-name="Heading_20_2">
-   <style:text-properties officeooo:rsid="000a4944" officeooo:paragraph-rsid="001194f9"/>
-  </style:style>
-  <style:style style:name="P30" style:family="paragraph" style:parent-style-name="Heading_20_2">
-   <style:text-properties officeooo:rsid="000d0b4f" officeooo:paragraph-rsid="000d0b4f"/>
-  </style:style>
-  <style:style style:name="P31" style:family="paragraph" style:parent-style-name="Heading_20_2">
-   <style:text-properties officeooo:paragraph-rsid="000d0b4f"/>
-  </style:style>
-  <style:style style:name="P32" style:family="paragraph" style:parent-style-name="Heading_20_3">
-   <style:text-properties officeooo:rsid="000a4944" officeooo:paragraph-rsid="000a4944"/>
-  </style:style>
-  <style:style style:name="P33" style:family="paragraph" style:parent-style-name="Heading_20_3">
-   <style:text-properties officeooo:rsid="000a4944" officeooo:paragraph-rsid="001194f9"/>
-  </style:style>
-  <style:style style:name="P34" style:family="paragraph" style:parent-style-name="Heading_20_3">
-   <style:text-properties officeooo:rsid="000a4944" officeooo:paragraph-rsid="001340c9"/>
-  </style:style>
-  <style:style style:name="P35" style:family="paragraph" style:parent-style-name="Heading_20_3">
-   <style:text-properties officeooo:paragraph-rsid="000a4944"/>
-  </style:style>
-  <style:style style:name="P36" style:family="paragraph" style:parent-style-name="Heading_20_3">
-   <style:text-properties officeooo:paragraph-rsid="001194f9"/>
-  </style:style>
-  <style:style style:name="P37" style:family="paragraph" style:parent-style-name="Heading_20_3">
+  <style:style style:name="P28" style:family="paragraph" style:parent-style-name="Heading_20_1">
    <style:text-properties officeooo:rsid="000b25b4" officeooo:paragraph-rsid="000b25b4"/>
   </style:style>
-  <style:style style:name="P38" style:family="paragraph" style:parent-style-name="Heading_20_3">
+  <style:style style:name="P29" style:family="paragraph" style:parent-style-name="Heading_20_1">
    <style:text-properties officeooo:rsid="000d0b4f" officeooo:paragraph-rsid="000d0b4f"/>
   </style:style>
-  <style:style style:name="P39" style:family="paragraph" style:parent-style-name="List" style:list-style-name="L1"/>
-  <style:style style:name="P40" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:paragraph-rsid="000d0b4f"/>
+  <style:style style:name="P30" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:text-properties officeooo:rsid="00152fda" officeooo:paragraph-rsid="00152fda"/>
   </style:style>
-  <style:style style:name="P41" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:rsid="001340c9" officeooo:paragraph-rsid="001340c9"/>
+  <style:style style:name="P31" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:rsid="000a4944" officeooo:paragraph-rsid="000a4944"/>
+  </style:style>
+  <style:style style:name="P32" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:rsid="000a4944" officeooo:paragraph-rsid="001194f9"/>
+  </style:style>
+  <style:style style:name="P33" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:rsid="000a4944" officeooo:paragraph-rsid="00152fda"/>
+  </style:style>
+  <style:style style:name="P34" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:rsid="000d0b4f" officeooo:paragraph-rsid="000d0b4f"/>
+  </style:style>
+  <style:style style:name="P35" style:family="paragraph" style:parent-style-name="Heading_20_2">
+   <style:text-properties officeooo:paragraph-rsid="00152fda"/>
+  </style:style>
+  <style:style style:name="P36" style:family="paragraph" style:parent-style-name="Heading_20_3">
+   <style:text-properties officeooo:rsid="000a4944" officeooo:paragraph-rsid="000a4944"/>
+  </style:style>
+  <style:style style:name="P37" style:family="paragraph" style:parent-style-name="Heading_20_3">
+   <style:text-properties officeooo:rsid="000a4944" officeooo:paragraph-rsid="001194f9"/>
+  </style:style>
+  <style:style style:name="P38" style:family="paragraph" style:parent-style-name="Heading_20_3">
+   <style:text-properties officeooo:rsid="000a4944" officeooo:paragraph-rsid="001340c9"/>
+  </style:style>
+  <style:style style:name="P39" style:family="paragraph" style:parent-style-name="Heading_20_3">
+   <style:text-properties officeooo:paragraph-rsid="000a4944"/>
+  </style:style>
+  <style:style style:name="P40" style:family="paragraph" style:parent-style-name="Heading_20_3">
+   <style:text-properties officeooo:paragraph-rsid="001194f9"/>
+  </style:style>
+  <style:style style:name="P41" style:family="paragraph" style:parent-style-name="Heading_20_3">
+   <style:text-properties officeooo:rsid="000b25b4" officeooo:paragraph-rsid="000b25b4"/>
+  </style:style>
+  <style:style style:name="P42" style:family="paragraph" style:parent-style-name="Heading_20_3">
+   <style:text-properties officeooo:rsid="000d0b4f" officeooo:paragraph-rsid="000d0b4f"/>
+  </style:style>
+  <style:style style:name="P43" style:family="paragraph" style:parent-style-name="Heading_20_3">
+   <style:text-properties officeooo:paragraph-rsid="00152fda"/>
+  </style:style>
+  <style:style style:name="P44" style:family="paragraph" style:parent-style-name="List" style:list-style-name="L1"/>
+  <style:style style:name="P45" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:paragraph-rsid="000a4944"/>
+  </style:style>
+  <style:style style:name="P46" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:paragraph-rsid="00152fda"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
    <style:text-properties officeooo:rsid="000a4944"/>
@@ -500,33 +515,39 @@
    <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:text-position="0% 100%" fo:font-style="italic" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="000fe9bf" style:font-style-asian="italic"/>
   </style:style>
   <style:style style:name="T18" style:family="text">
-   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:text-position="0% 100%" fo:font-style="normal" style:text-underline-style="none" fo:font-weight="normal" style:font-style-asian="normal" style:font-style-complex="normal"/>
+   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:text-position="0% 100%" fo:font-style="normal" style:text-underline-style="none" fo:font-weight="normal" style:font-style-asian="normal"/>
   </style:style>
   <style:style style:name="T19" style:family="text">
-   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:text-position="0% 100%" fo:font-style="normal" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="000a4944" style:font-style-asian="normal" style:font-style-complex="normal"/>
+   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:text-position="0% 100%" fo:font-style="normal" style:text-underline-style="none" fo:font-weight="normal" style:font-style-asian="normal" style:font-style-complex="normal"/>
   </style:style>
   <style:style style:name="T20" style:family="text">
-   <style:text-properties officeooo:rsid="000b25b4"/>
+   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:text-position="0% 100%" fo:font-style="normal" style:text-underline-style="none" fo:font-weight="normal" officeooo:rsid="000a4944" style:font-style-asian="normal" style:font-style-complex="normal"/>
   </style:style>
   <style:style style:name="T21" style:family="text">
-   <style:text-properties officeooo:rsid="000d0b4f"/>
+   <style:text-properties fo:font-variant="normal" fo:text-transform="none" fo:font-style="normal"/>
   </style:style>
   <style:style style:name="T22" style:family="text">
-   <style:text-properties style:text-line-through-style="none" style:text-line-through-type="none" style:text-underline-style="none" style:text-blinking="false"/>
+   <style:text-properties officeooo:rsid="000b25b4"/>
   </style:style>
   <style:style style:name="T23" style:family="text">
-   <style:text-properties officeooo:rsid="000df743"/>
+   <style:text-properties officeooo:rsid="000d0b4f"/>
   </style:style>
   <style:style style:name="T24" style:family="text">
-   <style:text-properties fo:font-style="normal" style:font-style-asian="normal" style:font-style-complex="normal"/>
+   <style:text-properties style:text-line-through-style="none" style:text-line-through-type="none" style:text-underline-style="none" style:text-blinking="false"/>
   </style:style>
   <style:style style:name="T25" style:family="text">
-   <style:text-properties fo:font-style="normal" officeooo:rsid="000d0b4f" style:font-style-asian="normal" style:font-style-complex="normal"/>
+   <style:text-properties officeooo:rsid="000df743"/>
   </style:style>
   <style:style style:name="T26" style:family="text">
-   <style:text-properties officeooo:rsid="00102d96"/>
+   <style:text-properties fo:font-style="normal" style:font-style-asian="normal" style:font-style-complex="normal"/>
   </style:style>
   <style:style style:name="T27" style:family="text">
+   <style:text-properties fo:font-style="normal" officeooo:rsid="000d0b4f" style:font-style-asian="normal" style:font-style-complex="normal"/>
+  </style:style>
+  <style:style style:name="T28" style:family="text">
+   <style:text-properties officeooo:rsid="00102d96"/>
+  </style:style>
+  <style:style style:name="T29" style:family="text">
    <style:text-properties style:font-name="Times New Roman" style:font-size-asian="10.5pt"/>
   </style:style>
   <text:list-style style:name="L1">
@@ -619,21 +640,21 @@
    <text:h text:style-name="P1" text:outline-level="1">Monographie</text:h>
    <text:h text:style-name="P2" text:outline-level="2">Note</text:h>
    <text:h text:style-name="Heading_20_3" text:outline-level="3">1<text:span text:style-name="T2">re</text:span> occurrence</text:h>
-   <text:p text:style-name="P18"><text:span text:style-name="T10">É. Mâle, </text:span><text:span text:style-name="T11">L’art religieux du XIIIe siècle en France :  étude sur l’iconographie du Moyen âge et sur ses sources d’inspiration</text:span><text:span text:style-name="T10"> [1re éd. 1898], Paris, 2021.</text:span></text:p>
+   <text:p text:style-name="P19"><text:span text:style-name="T10">É. Mâle, </text:span><text:span text:style-name="T11">L’art religieux du XIIIe siècle en France :  étude sur l’iconographie du Moyen âge et sur ses sources d’inspiration</text:span><text:span text:style-name="T10"> [1re éd. 1898], Paris, 2021.</text:span></text:p>
    <text:h text:style-name="P3" text:outline-level="3">Occurrences suivantes</text:h>
-   <text:p text:style-name="P18"><text:span text:style-name="T19">É. Mâle, </text:span><text:span text:style-name="T15">L’art religieux du XIIIe siècle en France</text:span><text:span text:style-name="T19">, </text:span><text:span text:style-name="T15">op. </text:span><text:span text:style-name="T16">c</text:span><text:span text:style-name="T15">it.</text:span><text:span text:style-name="T19">, p. 72-75.</text:span></text:p>
+   <text:p text:style-name="P19"><text:span text:style-name="T20">É. Mâle, </text:span><text:span text:style-name="T15">L’art religieux du XIIIe siècle en France</text:span><text:span text:style-name="T20">, </text:span><text:span text:style-name="T15">op. </text:span><text:span text:style-name="T16">c</text:span><text:span text:style-name="T15">it.</text:span><text:span text:style-name="T20">, p. 72-75.</text:span></text:p>
    <text:h text:style-name="P3" text:outline-level="3">Occurrences consécutives</text:h>
    <text:p text:style-name="Standard"><text:span text:style-name="T6">Ibid</text:span>., p. 76.</text:p>
    <text:h text:style-name="P2" text:outline-level="2">Bibliographie</text:h>
-   <text:p text:style-name="P18"><text:span text:style-name="T8">Mâle</text:span> (Émile), <text:span text:style-name="T5">L’art religieux du XIIIe siècle en France :  étude sur l’iconographie du Moyen âge et sur ses sources d’inspiration</text:span> [1re éd. 1898], Paris, Klincksieck, 2021 (Les mondes de l’art, 16).</text:p>
+   <text:p text:style-name="P19"><text:span text:style-name="T8">Mâle</text:span> (Émile), <text:span text:style-name="T5">L’art religieux du XIIIe siècle en France :  étude sur l’iconographie du Moyen âge et sur ses sources d’inspiration</text:span> [1re éd. 1898], Paris, Klincksieck, 2021 (Les mondes de l’art, 16).</text:p>
    <text:h text:style-name="P1" text:outline-level="1">Article dans une revue</text:h>
    <text:h text:style-name="P2" text:outline-level="2">Note</text:h>
-   <text:h text:style-name="P10" text:outline-level="3">1<text:span text:style-name="T2">re</text:span> occurrence</text:h>
+   <text:h text:style-name="P11" text:outline-level="3">1<text:span text:style-name="T2">re</text:span> occurrence</text:h>
    <text:p text:style-name="Standard">J.-M. Sansterre, « <text:span text:style-name="T5">Omnes qui coram hac imagine genua flexerint…</text:span> La vénération des images de saints et de la Vierge d’après les textes écrits en Angleterre du milieu du XIe aux premières décennies du XIIIe siècle », <text:span text:style-name="T5">Cahiers de civilisation médiévale</text:span>, vol. 49, 195 (2006), p. 257‑294.</text:p>
    <text:h text:style-name="P3" text:outline-level="3">Occurrences suivantes</text:h>
    <text:p text:style-name="Standard"><text:span text:style-name="T10">J.-M. Sansterre, « </text:span><text:span text:style-name="T12">Omnes qui coram hac imagine genua flexerint…</text:span><text:span text:style-name="T10"> », </text:span><text:span text:style-name="T12">op. cit.</text:span></text:p>
    <text:h text:style-name="P2" text:outline-level="2">Bibliographie</text:h>
-   <text:p text:style-name="P11"><text:span text:style-name="T8">Sansterre</text:span> (Jean-Marie), « <text:span text:style-name="T5">Omnes qui coram hac imagine genua flexerint…</text:span> La vénération des <text:soft-page-break/>images de saints et de la Vierge d’après les textes écrits en Angleterre du milieu du XIe aux premières décennies du XIIIe siècle », <text:span text:style-name="T5">Cahiers de civilisation médiévale</text:span>, vol. 49, 195 (2006), p. 257‑294.</text:p>
+   <text:p text:style-name="P12"><text:span text:style-name="T8">Sansterre</text:span> (Jean-Marie), « <text:span text:style-name="T5">Omnes qui coram hac imagine genua flexerint…</text:span> La vénération des <text:soft-page-break/>images de saints et de la Vierge d’après les textes écrits en Angleterre du milieu du XIe aux premières décennies du XIIIe siècle », <text:span text:style-name="T5">Cahiers de civilisation médiévale</text:span>, vol. 49, 195 (2006), p. 257‑294.</text:p>
    <text:h text:style-name="P1" text:outline-level="1">Article dans un collectif</text:h>
    <text:h text:style-name="P2" text:outline-level="2">Note</text:h>
    <text:h text:style-name="Heading_20_3" text:outline-level="3">1<text:span text:style-name="T2">re</text:span> occurrence</text:h>
@@ -641,39 +662,47 @@
    <text:h text:style-name="P3" text:outline-level="3">Occurrences suivantes</text:h>
    <text:p text:style-name="Standard"><text:span text:style-name="T10">R.A. Maxwell, « La sculpture romane et ses programmes », </text:span><text:span text:style-name="T12">op. </text:span><text:span text:style-name="T17">c</text:span><text:span text:style-name="T12">it.</text:span></text:p>
    <text:h text:style-name="P2" text:outline-level="2">Bibliographie</text:h>
-   <text:p text:style-name="P11"><text:span text:style-name="T8">Maxwell</text:span> (Robert A.), « La sculpture romane et ses programmes : questions de méthode », dans <text:span text:style-name="T5">Le programme : une notion pertinente en histoire de l’art médiéval ?</text:span>, éd. Jean-Marie <text:span text:style-name="T8">Guillouët</text:span> et Claudia <text:span text:style-name="T8">Rabel</text:span>, Paris, Le Léopard d’or, 2011 (Cahiers du Léopard d’or, 12), p. 135‑163.</text:p>
-   <text:h text:style-name="P19" text:outline-level="1">Source éditée dans un ouvrage<text:line-break/>(recueil, monographie, etc.)</text:h>
+   <text:p text:style-name="P12"><text:span text:style-name="T8">Maxwell</text:span> (Robert A.), « La sculpture romane et ses programmes : questions de méthode », dans <text:span text:style-name="T5">Le programme : une notion pertinente en histoire de l’art médiéval ?</text:span>, éd. Jean-Marie <text:span text:style-name="T8">Guillouët</text:span> et Claudia <text:span text:style-name="T8">Rabel</text:span>, Paris, Le Léopard d’or, 2011 (Cahiers du Léopard d’or, 12), p. 135‑163.</text:p>
+   <text:h text:style-name="P30" text:outline-level="1">Communication non publiée</text:h>
+   <text:h text:style-name="P33" text:outline-level="2">Note</text:h>
+   <text:h text:style-name="P43" text:outline-level="3">1<text:span text:style-name="T2">re</text:span> occurrence</text:h>
+   <text:p text:style-name="P46"><text:span text:style-name="T10">M. Cohen, « La Sainte-Chapelle et ses itérations multiples à l’intersection de l’historiographie franco‑américaine », </text:span><text:span text:style-name="T18">Looking across the Atlantic</text:span><text:span text:style-name="T12"> : circulations d’idées entre la France et l’Amérique du Nord en art médiéval</text:span><text:span text:style-name="T10">, colloque international de l’Institut national d’histoire de l’art, dir. N. Le Luel et I. Marchesin, Paris, 13 juin 2019.</text:span></text:p>
+   <text:h text:style-name="P43" text:outline-level="3"><text:span text:style-name="T1">Occurrences suivantes</text:span></text:h>
+   <text:p text:style-name="P46">M. Cohen, « La Sainte-Chapelle et ses itérations multiples<text:span text:style-name="T12">…</text:span> », <text:span text:style-name="T6">op. cit.</text:span></text:p>
+   <text:h text:style-name="P35" text:outline-level="2"><text:span text:style-name="T1">Bibliographie</text:span></text:h>
+   <text:p text:style-name="Standard"><text:span text:style-name="T8">Cohen</text:span> (Meredith), « La Sainte-Chapelle et ses itérations multiples à l’intersection de l’historiographie franco‑américaine », <text:span text:style-name="T21">Looking across the Atlantic</text:span><text:span text:style-name="T5"> : circulations d’idées entre la France et l’Amérique du Nord en art médiéval</text:span>, colloque international de l’Institut national d’histoire de l’art, dir. Nathalie <text:span text:style-name="T8">Le Luel</text:span> et Isabelle <text:span text:style-name="T8">Marchesin</text:span>, Paris, 13 juin 2019.</text:p>
+   <text:h text:style-name="P20" text:outline-level="1"><text:soft-page-break/>Source éditée dans un ouvrage<text:line-break/>(recueil, monographie, etc.)</text:h>
    <text:h text:style-name="P5" text:outline-level="2">Note</text:h>
-   <text:h text:style-name="P22" text:outline-level="3">1<text:span text:style-name="T2">re</text:span> occurrence</text:h>
+   <text:h text:style-name="P23" text:outline-level="3">1<text:span text:style-name="T2">re</text:span> occurrence</text:h>
    <text:p text:style-name="Standard"><text:span text:style-name="T10">Aimoin de Fleury, </text:span><text:span text:style-name="T11">Vita et passio sancti Abbonis</text:span><text:span text:style-name="T10">, éd. R.H. Bautier et G. Tyl-Labory, dans </text:span><text:span text:style-name="T11">L’abbaye de Fleury en l’an mil</text:span><text:span text:style-name="T10">, éd. R.-H. Bautier, G. Tyl-Labory, et al., Paris, 2004, p. 25‑38.</text:span></text:p>
    <text:h text:style-name="P6" text:outline-level="3">Occurrences suivantes</text:h>
-   <text:p text:style-name="Standard"><text:span text:style-name="T19">Aimoin de Fleury, </text:span><text:span text:style-name="T15">Vita et passio sancti Abbonis</text:span><text:span text:style-name="T19">, éd. R.H. Bautier et al., </text:span><text:span text:style-name="T15">op. cit.</text:span></text:p>
+   <text:p text:style-name="Standard"><text:span text:style-name="T20">Aimoin de Fleury, </text:span><text:span text:style-name="T15">Vita et passio sancti Abbonis</text:span><text:span text:style-name="T20">, éd. R.H. Bautier et al., </text:span><text:span text:style-name="T15">op. cit.</text:span></text:p>
    <text:h text:style-name="P6" text:outline-level="3">Occurrences consécutives</text:h>
-   <text:p text:style-name="P20"><text:span text:style-name="T6">Ibid.</text:span>, p. 32.</text:p>
+   <text:p text:style-name="P21"><text:span text:style-name="T6">Ibid.</text:span>, p. 32.</text:p>
    <text:h text:style-name="P5" text:outline-level="2">Bibliographie</text:h>
-   <text:p text:style-name="P23"><text:span text:style-name="T8">Aimoin de Fleury</text:span>, <text:span text:style-name="T5">Vita et passio sancti Abbonis</text:span>, éd. Robert Henri <text:span text:style-name="T8">Bautier</text:span> et Gillette <text:span text:style-name="T8">Tyl-Labory</text:span>, dans <text:span text:style-name="T5">L’abbaye de Fleury en l’an mil</text:span>, éd. Robert-Henri Bautier, Gillette Tyl-Labory, Anselme Davril, et Lin Donnat, Paris, CNRS éd, 2004 (Sources d’histoire médiévale, 32), p. 25‑38.</text:p>
-   <text:h text:style-name="P7" text:outline-level="1"><text:soft-page-break/>Notice dans un catalogue d’exposition</text:h>
+   <text:p text:style-name="P24"><text:span text:style-name="T8">Aimoin de Fleury</text:span>, <text:span text:style-name="T5">Vita et passio sancti Abbonis</text:span>, éd. Robert Henri <text:span text:style-name="T8">Bautier</text:span> et Gillette <text:span text:style-name="T8">Tyl-Labory</text:span>, dans <text:span text:style-name="T5">L’abbaye de Fleury en l’an mil</text:span>, éd. Robert-Henri Bautier, Gillette Tyl-Labory, Anselme Davril, et Lin Donnat, Paris, CNRS éd, 2004 (Sources d’histoire médiévale, 32), p. 25‑38.</text:p>
+   <text:h text:style-name="P8" text:outline-level="1">Notice dans un catalogue d’exposition</text:h>
    <text:h text:style-name="Heading_20_2" text:outline-level="2">Note</text:h>
-   <text:h text:style-name="P8" text:outline-level="3">1<text:span text:style-name="T2">re</text:span> occurrence</text:h>
-   <text:p text:style-name="Standard">C. Denoël, « Pentateuque d’Ashburnham », dans <text:span text:style-name="T5">Les temps mérovingiens : trois siècles d’art et de culture (451-751) [catalogue de l’exposition du Musée de Cluny - Musée national du Moyen Âge, 26 octobre 2016-13 février 2017]</text:span>, éd. I. Bardies-Fronty, C. Denoël, et I. Villela-Petit, Paris, 2016, <text:span text:style-name="T20">cat. 53, </text:span>p. 59.</text:p>
-   <text:h text:style-name="P13" text:outline-level="1">Notice d’une ressource en ligne</text:h>
-   <text:h text:style-name="P14" text:outline-level="2">Note</text:h>
-   <text:h text:style-name="P15" text:outline-level="3">1<text:span text:style-name="T2">re</text:span> occurrence</text:h>
-   <text:p text:style-name="P17">Bibliothèque nationale de France<text:span text:style-name="T21">, « </text:span><text:span text:style-name="T6">Calendaria et tabulae. Macrobius, Commentarii in Somnium Scipionis </text:span>[Département des Manuscrits, Latin 7299] », <text:span text:style-name="T7">Gallica</text:span><text:span text:style-name="T25">,</text:span><text:span text:style-name="T24"> </text:span>URL : <text:a xlink:type="simple" xlink:href="https://gallica.bnf.fr/ark:/12148/btv1b10542286q" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://gallica.bnf.fr/ark:/12148/btv1b10542286q</text:a>, <text:span text:style-name="T23">c</text:span>onsulté le 1 décembre 2022.</text:p>
-   <text:h text:style-name="P34" text:outline-level="3">Occurrences suivantes</text:h>
+   <text:h text:style-name="P9" text:outline-level="3">1<text:span text:style-name="T2">re</text:span> occurrence</text:h>
+   <text:p text:style-name="Standard">C. Denoël, « Pentateuque d’Ashburnham », dans <text:span text:style-name="T5">Les temps mérovingiens : trois siècles d’art et de culture (451-751) [catalogue de l’exposition du Musée de Cluny - Musée national du Moyen Âge, 26 octobre 2016-13 février 2017]</text:span>, éd. I. Bardies-Fronty, C. Denoël, et I. Villela-Petit, Paris, 2016, <text:span text:style-name="T22">cat. 53, </text:span>p. 59.</text:p>
+   <text:h text:style-name="P14" text:outline-level="1">Notice d’une ressource en ligne</text:h>
+   <text:h text:style-name="P15" text:outline-level="2">Note</text:h>
+   <text:h text:style-name="P16" text:outline-level="3">1<text:span text:style-name="T2">re</text:span> occurrence</text:h>
+   <text:p text:style-name="P18">Bibliothèque nationale de France<text:span text:style-name="T23">, « </text:span><text:span text:style-name="T6">Calendaria et tabulae. Macrobius, Commentarii in Somnium Scipionis </text:span>[Département des Manuscrits, Latin 7299] », <text:span text:style-name="T7">Gallica</text:span><text:span text:style-name="T27">,</text:span><text:span text:style-name="T26"> </text:span>URL : <text:a xlink:type="simple" xlink:href="https://gallica.bnf.fr/ark:/12148/btv1b10542286q" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://gallica.bnf.fr/ark:/12148/btv1b10542286q</text:a>, <text:span text:style-name="T25">c</text:span>onsulté le 1 décembre 2022.</text:p>
+   <text:h text:style-name="P7" text:outline-level="3">Occurrences suivantes</text:h>
    <text:p text:style-name="Standard">Bibliothèque nationale de France, « [Ms. Latin 7299] », <text:span text:style-name="T6">op. cit.</text:span></text:p>
-   <text:h text:style-name="P16" text:outline-level="2"><text:span text:style-name="T21">Bibliographie</text:span></text:h>
+   <text:h text:style-name="P15" text:outline-level="2"><text:soft-page-break/>Bibliographie</text:h>
    <text:h text:style-name="Heading_20_3" text:outline-level="3">Référence unique</text:h>
-   <text:p text:style-name="P17"><text:span text:style-name="T9">Bibliothèque nationale de France</text:span><text:span text:style-name="T21">, « </text:span><text:span text:style-name="T6">Calendaria et tabulae. Macrobius, Commentarii in Somnium Scipionis </text:span>[Département des Manuscrits, Latin 7299] », <text:span text:style-name="T7">Gallica</text:span><text:span text:style-name="T25">,</text:span> URL : <text:a xlink:type="simple" xlink:href="https://gallica.bnf.fr/ark:/12148/btv1b10542286q" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://gallica.bnf.fr/ark:/12148/btv1b10542286q</text:a>, <text:span text:style-name="T26">c</text:span>onsulté le 1 décembre 2022.</text:p>
+   <text:p text:style-name="P18"><text:span text:style-name="T9">Bibliothèque nationale de France</text:span><text:span text:style-name="T23">, « </text:span><text:span text:style-name="T6">Calendaria et tabulae. Macrobius, Commentarii in Somnium Scipionis </text:span>[Département des Manuscrits, Latin 7299] », <text:span text:style-name="T7">Gallica</text:span><text:span text:style-name="T27">,</text:span> URL : <text:a xlink:type="simple" xlink:href="https://gallica.bnf.fr/ark:/12148/btv1b10542286q" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://gallica.bnf.fr/ark:/12148/btv1b10542286q</text:a>, <text:span text:style-name="T28">c</text:span>onsulté le 1 décembre 2022.</text:p>
    <text:h text:style-name="Heading_20_3" text:outline-level="3">Liste de références</text:h>
-   <text:p text:style-name="P41"><text:span text:style-name="Definition">Un ensemble de notices issues de la m</text:span><text:span text:style-name="Definition"><text:span text:style-name="T27">ême ressource se présente sous forme de liste.</text:span></text:span></text:p>
-   <text:p text:style-name="P17"><text:span text:style-name="T9">Bibliothèque nationale de France</text:span><text:span text:style-name="T21">, </text:span><text:span text:style-name="T7">Gallica</text:span> :</text:p>
-   <text:list xml:id="list1788672247" text:style-name="L1">
+   <text:p text:style-name="P25"><text:span text:style-name="Definition">Un ensemble de notices issues de la m</text:span><text:span text:style-name="Definition"><text:span text:style-name="T29">ême ressource se présente sous forme de liste.</text:span></text:span></text:p>
+   <text:p text:style-name="P18"><text:span text:style-name="T9">Bibliothèque nationale de France</text:span><text:span text:style-name="T23">, </text:span><text:span text:style-name="T7">Gallica</text:span> :</text:p>
+   <text:list xml:id="list917136447" text:style-name="L1">
     <text:list-item>
-     <text:p text:style-name="P39"><text:span text:style-name="T21">« </text:span><text:span text:style-name="T6">Calendaria et tabulae. Macrobius, Commentarii in Somnium Scipionis </text:span>[Département des Manuscrits, Latin 7299] », URL : <text:a xlink:type="simple" xlink:href="https://gallica.bnf.fr/ark:/12148/btv1b10542286q" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://gallica.bnf.fr/ark:/12148/btv1b10542286q</text:a>, <text:span text:style-name="T23">c</text:span>onsulté le 1 décembre 2022 ;</text:p>
+     <text:p text:style-name="P44"><text:span text:style-name="T23">« </text:span><text:span text:style-name="T6">Calendaria et tabulae. Macrobius, Commentarii in Somnium Scipionis </text:span>[Département des Manuscrits, Latin 7299] », URL : <text:a xlink:type="simple" xlink:href="https://gallica.bnf.fr/ark:/12148/btv1b10542286q" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://gallica.bnf.fr/ark:/12148/btv1b10542286q</text:a>, <text:span text:style-name="T25">c</text:span>onsulté le 1 décembre 2022 ;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P39">« Aristote : <text:span text:style-name="T6">Methaphisica </text:span>[Bibliothèque de l’Arsenal, <text:span text:style-name="T23">ms. </text:span>702] », URL : <text:a xlink:type="simple" xlink:href="https://gallica.bnf.fr/ark:/12148/btv1b52506839q" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://gallica.bnf.fr/ark:/12148/btv1b52506839q</text:a><text:span text:style-name="T22">,</text:span> <text:span text:style-name="T23">c</text:span>onsulté le 1 décembre 2022.</text:p>
+     <text:p text:style-name="P44">« Aristote : <text:span text:style-name="T6">Methaphisica </text:span>[Bibliothèque de l’Arsenal, <text:span text:style-name="T25">ms. </text:span>702] », URL : <text:a xlink:type="simple" xlink:href="https://gallica.bnf.fr/ark:/12148/btv1b52506839q" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://gallica.bnf.fr/ark:/12148/btv1b52506839q</text:a><text:span text:style-name="T24">,</text:span> <text:span text:style-name="T25">c</text:span>onsulté le 1 décembre 2022.</text:p>
     </text:list-item>
    </text:list>
   </office:text>
