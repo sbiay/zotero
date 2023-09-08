@@ -33,11 +33,19 @@ Type de document Zotero à sélectionner : ***Article de colloque***.
 
 Renseignement des champs :
 
-- Pour l'intitulé de l'évènement : champ ***Titre des actes***
-- Pour le descriptif de l'évènement (exemple : « colloque international de l’Institut national d’histoire de l’art ») : champ ***Intitulé du colloque***
+- Pour l'intitulé de l'événement : champ ***Titre des actes***
+- Pour le descriptif de l'événement (exemple : « colloque international de l’Institut national d’histoire de l’art ») : champ ***Intitulé du colloque***
 
 **NB** : on peut tout à fait utiliser ***Article de colloque*** pour citer un article dans les actes de colloque publiés.
 
+## Evénement scientifique
+
+Exemple de note : *La création artistique à l’épreuve des héritages : continuités, mutations, ruptures*, 14e rencontres du GRIM-IMAGO, dir. C. Denoël, I. Marchesin, A.-O. Poilpré et al., Paris, galerie Colbert, 8 juin 2023.
+
+Type de document Zotero à sélectionner : ***Présentation***.
+
+- Pour les responsables scientifiques de l'événement : champ ***Présentateur***
+- Pour le descriptif de l'événement : champ ***Intitulé de la réunion***
 
 <a id='t1-2'/>
 
@@ -52,7 +60,8 @@ Type de document Zotero à sélectionner : ***Article d'encyclopédie***.
 
 ## Notice dans une ressource nativement numérique
 
-Exemple : Bibliothèque nationale de France, « *Calendaria et tabulae. Macrobius, Commentarii in Somnium Scipionis* [Département des Manuscrits, Latin 7299] », *Gallica*, URL : https://gallica.bnf.fr/ark:/12148/btv1b10542286q, consulté le 1 décembre 2022.
+Exemple : Bibliothèque nationale de France, « *Calendaria et tabulae.
+Macrobius, Commentarii in Somnium Scipionis* [Département des Manuscrits, Latin 7299] », *Gallica*, URL : https://gallica.bnf.fr/ark:/12148/btv1b10542286q, consulté le 1 décembre 2022.
 
 Type de document Zotero à sélectionner : ***Page web***.
 
@@ -63,7 +72,7 @@ Type de document Zotero à sélectionner : ***Page web***.
 
 ## Ressource nativement numérique
 
-Le type de document *Page web* étant dévolu aux notices contenues dans une ressource, pour citer une ressource en tant que telle, on optera pour le type de document ***Livre***.
+Le type de document *Page web* étant dévolu aux notices contenues dans une ressource, pour citer une ressource en tant que telle, on optera pour le type de document ***Logiciel***.
 
 
 <a id='t1-5'/>
@@ -72,7 +81,8 @@ Le type de document *Page web* étant dévolu aux notices contenues dans une res
 
 L'adaptation de l'usage de Zotero est nécessaire afin d'obtenir une typographie très spécifique, où le titre de la source ainsi que le titre de l'ouvrage sont en italique.
 
-Exemple : Aimoin de Fleury, *Vita et passio sancti Abbonis*, éd. Robert Henri Bautier et Gillette Tyl-Labory, dans *L’abbaye de Fleury en l’an mil*, éd. Robert-Henri Bautier, Gillette Tyl-Labory, Anselme Davril, et Lin Donnat, Paris, CNRS éd, 2004 (Sources d’histoire médiévale, 32), p. 25‑38.
+Exemple : Aimoin de Fleury, *Vita et passio sancti Abbonis*, éd.
+Robert Henri Bautier et Gillette Tyl-Labory, dans *L’abbaye de Fleury en l’an mil*, éd. Robert-Henri Bautier, Gillette Tyl-Labory, Anselme Davril, et Lin Donnat, Paris, CNRS éd, 2004 (Sources d’histoire médiévale, 32), p. 25‑38.
 
 Type de document Zotero à sélectionner : ***Entrée de dictionnaire***
 
