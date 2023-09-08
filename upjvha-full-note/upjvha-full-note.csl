@@ -60,12 +60,24 @@
   <macro name="author-bib">
     <choose>
       <if variable="author">
-        <names variable="author" suffix=", ">
-          <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" name-as-sort-order="all" sort-separator=" ">
-            <name-part name="family" font-variant="small-caps"/>
-            <name-part name="given" prefix="(" suffix=")"/>
-          </name>
-        </names>
+        <choose>
+          <if type="webpage software" match="any"><!--Dans la biblio, les responsables institutionnels de ressources numériques sont en bas de casse-->
+            <names variable="author" suffix=", ">
+              <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" name-as-sort-order="all" sort-separator=" ">
+                <name-part name="family" font-variant="normal"/>
+                <name-part name="given" prefix="(" suffix=")"/>
+              </name>
+            </names>
+          </if>
+          <else>
+            <names variable="author" suffix=", ">
+              <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" name-as-sort-order="all" sort-separator=" ">
+                <name-part name="family" font-variant="small-caps"/>
+                <name-part name="given" prefix="(" suffix=")"/>
+              </name>
+            </names>
+          </else>
+        </choose>
       </if>
     </choose>
   </macro>
@@ -411,7 +423,7 @@
   <macro name="date">
     <choose>
       <!--Si le site web n'a pas de date, on n'écrit pas [s.d.]-->
-      <if type="webpage" match="any">
+      <if type="webpage software" match="any">
         <choose>
           <if variable="issued">
             <date form="text" variable="issued" prefix=", ">
@@ -590,12 +602,12 @@
   <macro name="volume">
     <choose>
       <if is-numeric="volume">
-        <text term="volume" form="short" suffix=". "/>
+        <text term="volume" form="short" suffix=". " prefix=", "/>
         <text variable="volume"/>
         <text variable="number-of-volumes" prefix="/"/>
       </if>
       <else>
-        <text variable="volume"/>
+        <text variable="volume" prefix=", "/>
         <text variable="number-of-volumes" suffix=" vol."/>
       </else>
     </choose>
@@ -711,6 +723,7 @@
           <text macro="translator"/>
           <text macro="source-container-title"/>
           <text macro="source-container-editor"/>
+          <text macro="volume"/>
           <text macro="edition"/>
           <text macro="place"/>
           <text macro="yearpage"/>
@@ -734,7 +747,7 @@
       <text macro="source-container-editor-bib"/>
       <choose>
         <if match="none" variable="collection-title">
-          <text variable="number-of-volumes" prefix=", " suffix=" vol."/>
+          <text macro="volume"/>
         </if>
       </choose>
       <text macro="edition"/>
