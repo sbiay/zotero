@@ -33,27 +33,28 @@
       <term name="in">dans</term>
     </terms>
   </locale>
-  <macro name="author">
-    <choose>
-      <if variable="author">
-        <names variable="author" suffix="">
-          <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" et-al-min="4" et-al-use-first="3" initialize-with="." sort-separator=" " form="short">
-            <name-part name="family" font-variant="normal"/>
-          </name>
-          <et-al font-style="italic"/>
-        </names>
-      </if>
-    </choose>
-  </macro>
   <macro name="author-bib">
     <choose>
       <if variable="author">
-        <names variable="author" suffix=", ">
-          <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" name-as-sort-order="all" sort-separator=" ">
-            <name-part name="family" font-variant="small-caps"/>
-            <name-part name="given" prefix="(" suffix=")"/>
-          </name>
-        </names>
+        <choose>
+          <if type="webpage software" match="any">
+<!--Dans la biblio, les responsables institutionnels de ressources numériques sont en bas de casse-->
+            <names variable="author" suffix=", ">
+              <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" name-as-sort-order="all" sort-separator=" ">
+                <name-part name="family" font-variant="normal"/>
+                <name-part name="given" prefix="(" suffix=")"/>
+              </name>
+            </names>
+          </if>
+          <else>
+            <names variable="author" suffix=", ">
+              <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" name-as-sort-order="all" sort-separator=" ">
+                <name-part name="family" font-variant="small-caps"/>
+                <name-part name="given" prefix="(" suffix=")"/>
+              </name>
+            </names>
+          </else>
+        </choose>
       </if>
     </choose>
   </macro>
@@ -380,7 +381,7 @@
   <macro name="date">
     <choose>
       <!--Si le site web n'a pas de date, on n'écrit pas [s.d.]-->
-      <if type="webpage" match="any">
+      <if type="webpage software" match="any">
         <choose>
           <if variable="issued">
             <date form="text" variable="issued" prefix=", ">
@@ -559,12 +560,12 @@
   <macro name="volume">
     <choose>
       <if is-numeric="volume">
-        <text term="volume" form="short" suffix=". "/>
+        <text term="volume" form="short" suffix=". " prefix=", "/>
         <text variable="volume"/>
         <text variable="number-of-volumes" prefix="/"/>
       </if>
       <else>
-        <text variable="volume"/>
+        <text variable="volume" prefix=", "/>
         <text variable="number-of-volumes" suffix=" vol."/>
       </else>
     </choose>
@@ -619,7 +620,19 @@
       </date>
     </group>
   </macro>
-  <macro name="date-in-text">
+  <macro name="author">
+    <choose>
+      <if variable="author">
+        <names variable="author" suffix="">
+          <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" et-al-min="4" et-al-use-first="3" initialize-with="." sort-separator=" " form="short">
+            <name-part name="family" font-variant="normal"/>
+          </name>
+          <et-al font-style="italic"/>
+        </names>
+      </if>
+    </choose>
+  </macro>
+<macro name="date-in-text">
   <choose>
     <if variable="issued">
       <group delimiter=" ">
