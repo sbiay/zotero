@@ -299,12 +299,12 @@
         <group font-style="normal">
           <choose>
             <if variable="issued">
-              <text macro="volume" prefix=", "/>
+              <text variable="volume" prefix=", vol. "/>
               <text macro="issue" prefix=", "/>
               <date date-parts="year-month" form="text" variable="issued" prefix=" (" suffix=")"/>
             </if>
             <else>
-              <text macro="volume" prefix=", "/>
+              <text macro="volume" prefix=", vol."/>
             </else>
           </choose>
         </group>
@@ -605,6 +605,9 @@
     <text variable="ISBN" prefix=". ISBN&#160;: " suffix="."/>
   </macro>
   <macro name="volume">
+<choose>
+  <if type="article-journal" match="any"/><!--Si c'est un article de revue, c'est la macro edition qui gère le volume, le numéro et l'année-->
+  <else>
     <choose>
       <if is-numeric="volume">
         <text term="volume" form="short" suffix=". " prefix=", "/>
@@ -616,6 +619,8 @@
         <text variable="number-of-volumes" suffix=" vol."/>
       </else>
     </choose>
+  </else>
+</choose>
   </macro>
   <macro name="number">
     <choose>
@@ -728,7 +733,7 @@
           <text macro="translator"/>
           <text macro="source-container-title"/>
           <text macro="source-container-editor"/>
-          <text macro="volume"/>
+          <text macro="volume" prefix=", "/>
           <text macro="edition"/>
           <text macro="place"/>
           <text macro="yearpage"/>
