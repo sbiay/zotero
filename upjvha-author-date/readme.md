@@ -8,9 +8,9 @@ author: Sébastien Biay
 
 
 
-Le fichier [**upjvha-author-date.odt**](upjvha-author-date.odt) décrit le système abréviatif et son résultat typographique de manière succincte.
+Le fichier [**upjvha-author-date.odt**](https://github.com/sbiay/zotero/raw/main/upjvha-author-date/upjvha-author-date.docx) décrit le système abréviatif et son résultat typographique de manière succincte.
 
-En ce qui concerne la typographie de la liste bibliographique récapitulative, elle est pratiquement similaire à celle décrite dans le fichier [**upjvha-full-note.odt**](./upjvha-full-note.odt).
+En ce qui concerne la typographie de la liste bibliographique récapitulative, elle est pratiquement similaire à celle décrite dans le fichier [**upjvha-full-note.odt**](https://github.com/sbiay/zotero/raw/main/upjvha-full-note/upjvha-full-note.docx).
 
 
 <a id='t1'/>
