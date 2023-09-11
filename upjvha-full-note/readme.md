@@ -28,14 +28,14 @@ Les types de document couramment utilisés pour ce style sont :
 - Livre
 - Page web
 
-Le fichier [**upjvha-full-note.odt**](./upjvha-full-note.odt) montre le résultat typographique attendu pour chaque catégorie de référence.
+Le fichier [**upjvha-full-note.odt**](https://github.com/sbiay/zotero/raw/main/upjvha-full-note/upjvha-full-note.docx) montre le résultat typographique attendu pour chaque catégorie de référence.
 
 
 <a id='t1'/>
 
 # Usages spécifiques
 
-Pour obtenir les résultats typographiques décrits dans le fichier [**upjvha-full-note.odt**](./upjvha-full-note.odt), il est nécessaire d'apprendre certains usages spécifiques aux feuilles de style UPJVHA.
+Pour obtenir les résultats typographiques décrits dans le fichier [**upjvha-full-note.odt**](https://github.com/sbiay/zotero/raw/main/upjvha-full-note/upjvha-full-note.docx), il est nécessaire d'apprendre certains usages spécifiques aux feuilles de style UPJVHA.
 Ils sont décrits ci-dessous.
 
 
