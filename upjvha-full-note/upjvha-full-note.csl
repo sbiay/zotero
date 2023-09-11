@@ -63,9 +63,9 @@
         <choose>
           <if type="webpage software" match="any"><!--Dans la biblio, les responsables institutionnels de ressources numériques sont en bas de casse-->
             <names variable="author" suffix=", ">
-              <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" name-as-sort-order="all" sort-separator=" ">
+              <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" name-as-sort-order="all" sort-separator=", ">
                 <name-part name="family" font-variant="normal"/>
-                <name-part name="given" prefix="(" suffix=")"/>
+                <name-part name="given"/>
               </name>
             </names>
           </if>
@@ -78,7 +78,7 @@
                 name-as-sort-order="all"
                 sort-separator=", ">
                 <name-part name="family" font-variant="small-caps"/>
-                <name-part name="given" prefix="" suffix=""/>
+                <name-part name="given"/>
               </name>
             </names>
           </else>
