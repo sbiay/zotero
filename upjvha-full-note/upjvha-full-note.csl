@@ -7,9 +7,9 @@
   demote-non-dropping-particle="sort-only"
   default-locale="fr-FR">
   <info>
-    <title>UPJV Histoire de l'art - note complète (1.2)</title>
-    <title-short>UPJVHA-full-note-1.2</title-short>
-    <id>upjha-full-note-1.2</id>
+    <title>UPJV Histoire de l'art - note complète (1.3)</title>
+    <title-short>UPJVHA-full-note-1.3</title-short>
+    <id>upjha-full-note-1.3</id>
     <link href="http://www.zotero.org/styles/invisu" rel="template"/>
     <link href="http://www.zotero.org/styles/le-tapuscrit-note" rel="template"/>
     <link href="http://www.zotero.org/styles/traces" rel="template"/>
@@ -71,9 +71,14 @@
           </if>
           <else>
             <names variable="author" suffix=", ">
-              <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" name-as-sort-order="all" sort-separator=" ">
+              <name
+                font-style="normal"
+                and="text"
+                delimiter-precedes-et-al="never" delimiter-precedes-last="never"
+                name-as-sort-order="all"
+                sort-separator=", ">
                 <name-part name="family" font-variant="small-caps"/>
-                <name-part name="given" prefix="(" suffix=")"/>
+                <name-part name="given" prefix="" suffix=""/>
               </name>
             </names>
           </else>
@@ -271,9 +276,9 @@
   </macro>
   <macro name="source-container-editor-bib"><!--Editeur scientifique de l'ouvrage contenant l'édition-->
     <names variable="collection-editor" prefix=", éd. ">
-      <name 
-        font-style="normal" and="text">
-      </name>
+      <name form="long" and="text" delimiter=", ">
+          <name-part name="family" font-variant="small-caps"/>
+        </name>
     </names>
   </macro>
   <macro name="edition">
