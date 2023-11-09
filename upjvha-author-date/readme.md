@@ -8,9 +8,9 @@ author: Sébastien Biay
 
 
 
-Le fichier [**upjvha-author-date.odt**](https://github.com/sbiay/zotero/raw/main/upjvha-author-date/upjvha-author-date.docx) décrit le système abréviatif et son résultat typographique de manière succincte.
+Le fichier [**upjvha-author-date.docx**](https://github.com/sbiay/zotero/raw/main/upjvha-author-date/upjvha-author-date.docx) décrit le système abréviatif et son résultat typographique de manière succincte.
 
-En ce qui concerne la typographie de la liste bibliographique récapitulative, elle est pratiquement similaire à celle décrite dans le fichier [**upjvha-full-note.odt**](https://github.com/sbiay/zotero/raw/main/upjvha-full-note/upjvha-full-note.docx).
+En ce qui concerne la typographie de la liste bibliographique récapitulative, elle est pratiquement similaire à celle décrite dans le fichier [**upjvha-full-note.docx**](https://github.com/sbiay/zotero/raw/main/upjvha-full-note/upjvha-full-note.docx).
 
 
 <a id='t1'/>
@@ -28,7 +28,7 @@ Ils sont décrits [ici](../upjvha-full-note/readme.md).
 Si le style ne se comporte pas comme vous l'attendez, je vous remercie de me l'indiquer par courrier électronique selon les modalités suivantes :
 
 - *Destinataire :* sebastien.biay@u-picardie.fr
-- *Objet :* Style csl upjv-ha-full-note
+- *Objet :* Style csl upjvha-author-date
 - *Contenu du message*, merci d'y faire figurer : 
 
 	1. La référence telle que Zotero l'affiche dans votre traitement de texte
