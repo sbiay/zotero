@@ -720,9 +720,13 @@
           <text macro="translator-bib"/>
           <text macro="source-container-title"/>
           <text macro="source-container-editor-bib"/>
-          <choose>
+          <choose><!--Pour les livres et les chapitres, s'il n'y a pas de titre de collection mais plusieurs volumes, le nb de volume est ajouté précédé d'une virgule-->
             <if match="none" variable="collection-title">
-              <text variable="number-of-volumes" prefix=", " suffix=" vol."/>
+              <choose>
+                <if type="book chapter" match="any">
+                  <text variable="number-of-volumes" prefix=", " suffix=" vol."/>
+                </if>
+              </choose>
             </if>
           </choose>
           <text macro="edition"/>
