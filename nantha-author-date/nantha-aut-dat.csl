@@ -424,7 +424,7 @@
       <if type="book" match="any">
         <choose>
           <if match="all" variable="issued">
-            <date date-parts="year" form="text" variable="issued" prefix=", ">
+            <date date-parts="year" form="text" variable="issued" prefix=", " range-delimiter="-">
               <date-part name="year"/>
             </date>
           </if>
@@ -456,7 +456,7 @@
       <else-if type="article-newspaper entry-dictionary speech paper-conference report entry-encyclopedia chapter" match="any">
         <group>
           <text macro="newspaper-edition"/>
-          <text macro="date"/>
+          <text macro="year-bib"/>
           <text variable="page" prefix=", p. "/>
           <text macro="locators" prefix=", "/>
         </group>
@@ -728,7 +728,7 @@
 <!--Cas standards-->
           <text macro="author" suffix=", "/>
           <text macro="date-in-text" suffix=" – "/>
-          <text macro="author-bib"/>
+          <text macro="author-bib" suffix=", "/>
           <text macro="title"/>
           <text macro="editor-bib"/>
           <text macro="translator-bib"/>
