@@ -7,8 +7,8 @@
   demote-non-dropping-particle="sort-only"
   default-locale="fr-FR">
   <info>
-    <title>NantesHA - ODT</title>
-    <title-short>NantesHA-ODT</title-short>
+    <title>NantHA - note complète (1.1)</title>
+    <title-short>NantHA-full-note-1.1</title-short>
     <id>NantHA-full-note-1.1</id>
     <link href="http://www.zotero.org/styles/invisu" rel="template"/>
     <link href="http://www.zotero.org/styles/le-tapuscrit-note" rel="template"/>
