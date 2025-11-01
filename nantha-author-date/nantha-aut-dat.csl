@@ -702,7 +702,7 @@
           <choose>
             <if type="webpage software" match="any">
 <!--Cas particulier des ressources numériques : l'abréviation n'est pas l'auteur mais le titre-->
-              <text macro="title"/>
+              <text variable="title" form="short" font-style="italic"/>
             </if>
             <else>
 <!--Cas standards-->
@@ -725,18 +725,18 @@
       <choose>
         <if type="webpage software" match="any">
 <!--Cas particulier des ressources numériques : l'abréviation n'est pas l'auteur mais le titre-->
-          <text macro="author-bib"/>
+          <text variable="title" form="short" font-style="italic" suffix=" – "/>
+          <text macro="company-bib"/>
           <text macro="title"/>
-          <text macro="editor-bib"/>
-          <text macro="translator-bib"/>
-          <text macro="source-container-title"/>
-          <text macro="source-container-editor-bib"/>
+          <text macro="author-bib"/>
           <text macro="edition"/>
+          <text macro="event"/>
           <text macro="place"/>
           <text macro="publisher"/>
           <text macro="year-bib"/>
           <text macro="collection"/>
           <text macro="accessed"/>
+          <text macro="page-bib"/>
         </if>
         <else>
 <!--Cas standards-->
