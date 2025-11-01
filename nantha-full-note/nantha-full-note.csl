@@ -62,7 +62,7 @@
       <if variable="author">
         <choose>
           <if type="webpage software speech" match="any"><!--Dans la biblio, les responsables institutionnels de ressources numériques sont en bas de casse, ainsi que les organisateurs d'événement non publiés-->
-            <names variable="author" prefix="dir. ">
+            <names variable="author" prefix=", dir. ">
               <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" sort-separator=", ">
                 <name-part name="given"/>
                 <name-part name="family" font-variant="normal"/>
@@ -378,13 +378,27 @@
         </choose>
       </else-if>
       <else-if type="article-magazine article-journal personal_communication interview graphic webpage" match="any"/>
-      <else-if type="book chapter motion_picture report entry-dictionary entry-encyclopedia map" match="any">
+      <else-if type="book chapter motion_picture report entry-dictionary entry-encyclopedia map software" match="any">
         <choose>
           <if variable="publisher-place">
             <text variable="publisher-place" prefix=", "/>
           </if>
         </choose>
       </else-if>
+    </choose>
+  </macro>
+  <macro name="company">
+    <choose>
+      <if variable="company">
+        <text variable="company" suffix=", "/>
+      </if>
+    </choose>
+  </macro>
+  <macro name="company-bib">
+    <choose>
+      <if variable="company">
+        <text variable="company" font-variant="small-caps" suffix=", "/>
+      </if>
     </choose>
   </macro>
   <macro name="publisher">
@@ -465,7 +479,7 @@
       <if type="book" match="any">
         <choose>
           <if match="all" variable="issued">
-            <date date-parts="year" form="text" variable="issued" prefix=", " range-delimiter="-">
+            <date date-parts="year" form="text" variable="issued" prefix=", ">
               <date-part name="year"/>
             </date>
           </if>
@@ -695,7 +709,8 @@
         </else-if>
         <else-if position="subsequent">
           <choose>
-            <if type="speech"><!--Pour le type Présentation-->
+            <if type="speech software"><!--Pour le type présentation : événement scientifique non publié ; Pour le type Logiciel : ressource nativement numérique-->
+              <text macro="company"/>
               <group delimiter=", ">
                 <text variable="title" form="short" font-style="italic"/>
                 <text term="cited" font-style="italic" suffix="."/>
@@ -750,7 +765,8 @@
         </else-if>
         <else><!--en position first-->
           <choose>
-            <if type="speech"><!--Pour le type présentation : événement scientifique non publié-->
+            <if type="speech software"><!--Pour le type présentation : événement scientifique non publié ; Pour le type Logiciel : ressource nativement numérique-->
+              <text macro="company"/>
               <text macro="title"/>
               <choose>
                 <if variable="author">
@@ -790,8 +806,9 @@
     </sort>
     <layout suffix=".">
       <choose>
-        <if type="speech"><!--Pour le type Présentation : auteurs après le titre-->
-          <text macro="title" suffix=", "/>
+        <if type="speech software"><!--Pour le type Présentation : auteurs après le titre-->
+          <text macro="company-bib"/>
+          <text macro="title"/>
           <text macro="author-bib"/>
           <text macro="edition"/>
           <text macro="event"/>
