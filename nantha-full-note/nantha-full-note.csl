@@ -389,15 +389,15 @@
   </macro>
   <macro name="company">
     <choose>
-      <if variable="company">
-        <text variable="company" suffix=", "/>
+      <if variable="archive">
+        <text variable="archive" suffix=", "/>
       </if>
     </choose>
   </macro>
   <macro name="company-bib">
     <choose>
-      <if variable="company">
-        <text variable="company" font-variant="small-caps" suffix=", "/>
+      <if variable="archive">
+        <text variable="archive" font-variant="small-caps" suffix=", "/>
       </if>
     </choose>
   </macro>
