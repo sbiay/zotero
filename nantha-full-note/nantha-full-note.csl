@@ -761,9 +761,9 @@
                 <choose>
                   <if type="book graphic report map personal_communication interview motion_picture thesis broadcast manuscript" match="any">
                     <choose>
-                      <if variable="author" match="any"/><!--S'il y a un nom d'auteur, on ne cite pas le titre même abrégé❗ mais privilégier version signalée-->
+                      <if variable="author" match="any"/><!--S'il y a un nom d'auteur, on ne cite pas le titre même abrégé❗ mais privilégier version signalée ci-dessous dans else-->
                       <else>
-                        <text variable="title" form="short" font-style="italic"/><!--👍-->
+                        <text variable="title" form="short" font-style="italic"/>
                       </else>
                     </choose>
                   </if>
