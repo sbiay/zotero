@@ -8,8 +8,8 @@
   default-locale="fr-FR">
   <info>
     <title>NantHA - note complète (1.1)</title>
-    <title-short>NantHA-full-note-1.1</title-short>
-    <id>NantHA-full-note-1.1</id>
+    <title-short>NantHA-ODT</title-short>
+    <id>mon-odt-perso</id>
     <link href="http://www.zotero.org/styles/invisu" rel="template"/>
     <link href="http://www.zotero.org/styles/le-tapuscrit-note" rel="template"/>
     <link href="http://www.zotero.org/styles/traces" rel="template"/>
@@ -70,10 +70,10 @@
             </names>
           </if>
           <else-if type="webpage"><!--L'auteur d'une page web est une organisation-->
-            <names variable="author">
+            <names variable="author" suffix=", ">
               <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" sort-separator=", ">
                 <name-part name="given"/>
-                <name-part name="family" font-variant="normal"/>
+                <name-part name="family" font-variant="small-caps"/>
               </name>
             </names>
           </else-if>
@@ -112,7 +112,7 @@
   </macro>
   <macro name="editor-bib">
     <choose>
-      <!--Pour le type article de colloque, les éditeurs scientifiques sonté précédés de la mention dir., dans l'éventualités où les actes n'auraient pas été publiés-->
+      <!--Pour le type article de colloque, les éditeurs scientifiques sont précédés de la mention dir., dans l'éventualités où les actes n'auraient pas été publiés-->
       <if type="paper-conference">
         <names variable="editor" prefix=", dir. ">
           <name 
@@ -124,15 +124,29 @@
         </names>
       </if>
       <else>
-        <names variable="editor" prefix=", ">
-          <label form="short" suffix=" "/>
-          <name 
+        <choose>
+          <if variable="author" match="any"><!--S'il y a un auteur en plus d'un éditeur, c'est que l'on parle d'une édition de source : éd.-->
+            <names variable="editor" prefix=", ">
+              <label form="short" suffix=" "/>
+              <name 
             font-style="normal" and="text"
             delimiter-precedes-et-al="never" 
             delimiter-precedes-last="never">
-            <name-part name="family" font-variant="small-caps"/>
-          </name>
-        </names>
+                <name-part name="family" font-variant="small-caps"/>
+              </name>
+            </names>
+          </if>
+          <else><!--S'il n'y a pas d'auteur en plus d'un éditeur, c'est que l'on ne parle pas d'une édition de source : dir.-->
+            <names variable="editor" prefix=", dir. ">
+              <name 
+            font-style="normal" and="text"
+            delimiter-precedes-et-al="never" 
+            delimiter-precedes-last="never">
+                <name-part name="family" font-variant="small-caps"/>
+              </name>
+            </names>
+          </else>
+        </choose>
       </else>
     </choose>
   </macro>
@@ -164,15 +178,29 @@
         </choose>
       </if>
       <else>
-        <names variable="editor" prefix=", ">
-          <label form="short" suffix=" "/>
-          <name 
-            font-style="normal" and="text"
-            et-al-min="4" et-al-use-first="3"
-            initialize-with=".">
-          </name>
-          <et-al font-style="italic"/>
-        </names>
+        <choose>
+          <if variable="author" match="any"><!--S'il y a un auteur en plus d'un éditeur, c'est que l'on parle d'une édition de source : éd.-->
+            <names variable="editor" prefix=", ">
+              <label form="short" suffix=" "/>
+              <name 
+                font-style="normal" and="text"
+                et-al-min="4" et-al-use-first="3"
+                initialize-with=".">
+              </name>
+              <et-al font-style="italic"/>
+            </names>
+          </if>
+          <else><!--S'il n'y a pas d'auteur en plus d'un éditeur, c'est que l'on ne parle pas d'une édition de source : dir.-->
+            <names variable="editor" prefix=", dir. ">
+              <name 
+                font-style="normal" and="text"
+                et-al-min="4" et-al-use-first="3"
+                initialize-with=".">
+              </name>
+              <et-al font-style="italic"/>
+            </names>
+          </else>
+        </choose>
       </else>
     </choose>
   </macro>
@@ -283,7 +311,7 @@
     </choose>
   </macro>
   <macro name="source-container-editor"><!--Editeur scientifique de l'ouvrage contenant l'édition-->
-    <names variable="collection-editor" prefix=", éd. ">
+    <names variable="collection-editor" prefix=", dir. ">
       <name 
         font-style="normal" and="text"
         et-al-min="3" et-al-use-first="2" initialize-with=".">
@@ -292,7 +320,7 @@
     </names>
   </macro>
   <macro name="source-container-editor-bib"><!--Editeur scientifique de l'ouvrage contenant l'édition-->
-    <names variable="collection-editor" prefix=", éd. ">
+    <names variable="collection-editor" prefix=", dir. ">
       <name form="long" and="text" delimiter=", ">
         <name-part name="family" font-variant="small-caps"/>
       </name>
@@ -728,11 +756,16 @@
               </group>
             </if>
             <else><!--Pour tous les autres types-->
-              <text macro="author" suffix=", "/>
               <group delimiter=", ">
+              <text macro="author"/>
                 <choose>
                   <if type="book graphic report map personal_communication interview motion_picture thesis broadcast manuscript" match="any">
-                    <text variable="title" form="short" font-style="italic"/>
+                    <choose>
+                      <if variable="author" match="any"/><!--S'il y a un nom d'auteur, on ne cite pas le titre même abrégé❗ mais privilégier version signalée-->
+                      <else>
+                        <text variable="title" form="short" font-style="italic"/><!--👍-->
+                      </else>
+                    </choose>
                   </if>
                   <else-if type="entry-dictionary">
                     <text variable="title" form="short" font-style="italic"/>
@@ -763,7 +796,7 @@
                     <text variable="title" text-case="capitalize-first" form="short" quotes="true" font-style="normal"/>
                   </else>
                 </choose>
-                <text term="cited" font-style="italic" suffix="."/>
+                <text term="cited" font-style="italic" suffix=". (n. X)"/><!--❗-->
                 <group delimiter=" ">
                   <text macro="locators"/>
                 </group>
@@ -841,6 +874,18 @@
           <text macro="accessed"/>
           <text macro="page-bib"/>
         </if>
+        <else-if type="webpage"><!--Pour les notices dans une BDD-->
+          <text macro="author-bib"/>
+          <text macro="title"/>
+          <text macro="edition"/>
+          <text macro="event"/>
+          <text macro="place"/>
+          <text macro="publisher"/>
+          <text macro="year-bib"/>
+          <text macro="collection"/>
+          <text macro="accessed"/>
+          <text macro="page-bib"/>
+        </else-if>
         <else-if type="motion_picture"><!--Pour le type enregistrement vidéo : titre, date, auteurs-->
           <text macro="title"/>
           <text macro="yearpage" suffix=", "/>

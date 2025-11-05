@@ -48,10 +48,10 @@
           </if>
           <else-if type="webpage">
 <!--L'auteur d'une page web est une organisation-->
-            <names variable="author">
+            <names variable="author" suffix=", ">
               <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" sort-separator=", ">
                 <name-part name="given"/>
-                <name-part name="family" font-variant="normal"/>
+                <name-part name="family" font-variant="small-caps"/>
               </name>
             </names>
           </else-if>
@@ -90,7 +90,7 @@
   </macro>
   <macro name="editor-bib">
     <choose>
-      <!--Pour le type article de colloque, les éditeurs scientifiques sonté précédés de la mention dir., dans l'éventualités où les actes n'auraient pas été publiés-->
+      <!--Pour le type article de colloque, les éditeurs scientifiques sont précédés de la mention dir., dans l'éventualités où les actes n'auraient pas été publiés-->
       <if type="paper-conference">
         <names variable="editor" prefix=", dir. ">
           <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never">
@@ -99,12 +99,25 @@
         </names>
       </if>
       <else>
-        <names variable="editor" prefix=", ">
-          <label form="short" suffix=" "/>
-          <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never">
-            <name-part name="family" font-variant="small-caps"/>
-          </name>
-        </names>
+        <choose>
+          <if variable="author" match="any">
+<!--S'il y a un auteur en plus d'un éditeur, c'est que l'on parle d'une édition de source : éd.-->
+            <names variable="editor" prefix=", ">
+              <label form="short" suffix=" "/>
+              <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never">
+                <name-part name="family" font-variant="small-caps"/>
+              </name>
+            </names>
+          </if>
+          <else>
+<!--S'il n'y a pas d'auteur en plus d'un éditeur, c'est que l'on ne parle pas d'une édition de source : dir.-->
+            <names variable="editor" prefix=", dir. ">
+              <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never">
+                <name-part name="family" font-variant="small-caps"/>
+              </name>
+            </names>
+          </else>
+        </choose>
       </else>
     </choose>
   </macro>
@@ -130,12 +143,25 @@
         </choose>
       </if>
       <else>
-        <names variable="editor" prefix=", ">
-          <label form="short" suffix=" "/>
-          <name font-style="normal" and="text" et-al-min="4" et-al-use-first="3" initialize-with=".">
-          </name>
-          <et-al font-style="italic"/>
-        </names>
+        <choose>
+          <if variable="author" match="any">
+<!--S'il y a un auteur en plus d'un éditeur, c'est que l'on parle d'une édition de source : éd.-->
+            <names variable="editor" prefix=", ">
+              <label form="short" suffix=" "/>
+              <name font-style="normal" and="text" et-al-min="4" et-al-use-first="3" initialize-with=".">
+              </name>
+              <et-al font-style="italic"/>
+            </names>
+          </if>
+          <else>
+<!--S'il n'y a pas d'auteur en plus d'un éditeur, c'est que l'on ne parle pas d'une édition de source : dir.-->
+            <names variable="editor" prefix=", dir. ">
+              <name font-style="normal" and="text" et-al-min="4" et-al-use-first="3" initialize-with=".">
+              </name>
+              <et-al font-style="italic"/>
+            </names>
+          </else>
+        </choose>
       </else>
     </choose>
   </macro>
@@ -244,7 +270,7 @@
   </macro>
   <macro name="source-container-editor">
 <!--Editeur scientifique de l'ouvrage contenant l'édition-->
-    <names variable="collection-editor" prefix=", éd. ">
+    <names variable="collection-editor" prefix=", dir. ">
       <name font-style="normal" and="text" et-al-min="3" et-al-use-first="2" initialize-with=".">
       </name>
       <et-al font-style="italic"/>
@@ -252,7 +278,7 @@
   </macro>
   <macro name="source-container-editor-bib">
 <!--Editeur scientifique de l'ouvrage contenant l'édition-->
-    <names variable="collection-editor" prefix=", éd. ">
+    <names variable="collection-editor" prefix=", dir. ">
       <name form="long" and="text" delimiter=", ">
         <name-part name="family" font-variant="small-caps"/>
       </name>
