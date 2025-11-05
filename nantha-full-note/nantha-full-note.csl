@@ -61,7 +61,7 @@
     <choose>
       <if variable="author">
         <choose>
-          <if type="webpage software speech" match="any"><!--Dans la biblio, les responsables institutionnels de ressources numériques sont en bas de casse, ainsi que les organisateurs d'événement non publiés-->
+          <if type="software speech" match="any"><!--Dans la biblio, les responsables institutionnels de ressources numériques sont en bas de casse, ainsi que les organisateurs d'événement non publiés-->
             <names variable="author" prefix=", dir. ">
               <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" sort-separator=", ">
                 <name-part name="given"/>
@@ -69,6 +69,14 @@
               </name>
             </names>
           </if>
+          <else-if type="webpage"><!--L'auteur d'une page web est une organisation-->
+            <names variable="author">
+              <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" sort-separator=", ">
+                <name-part name="given"/>
+                <name-part name="family" font-variant="normal"/>
+              </name>
+            </names>
+          </else-if>
           <else>
             <names variable="author">
               <name
