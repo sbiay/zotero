@@ -94,18 +94,18 @@
       </if>
       <else-if variable="director"><!--pour les metteurs en scène, s'applique à enregistrement vidéo (motion_picture)-->
         <group delimiter=", ">
-        <names variable="director" suffix=", réal."><!--Typo empruntée à BNF-CG-->
-              <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" sort-separator=", ">
-                <name-part name="given" /><!--L'espace avant la fermante empêche l'ajout de parenthèses par le script python-->
-                <name-part name="family" font-variant="normal"/>
-              </name>
-            </names>
-            <names variable="performer" suffix=", act."><!--acteurs-->
-              <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" sort-separator=", ">
-                <name-part name="given"/><!--acteurs-->
-                <name-part name="family" font-variant="normal"/>
-              </name>
-            </names>
+          <names variable="director" suffix=", réal."><!--Typo empruntée à BNF-CG-->
+            <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" sort-separator=", ">
+              <name-part name="given" /><!--L'espace avant la fermante empêche l'ajout de parenthèses par le script python-->
+              <name-part name="family" font-variant="normal"/>
+            </name>
+          </names>
+          <names variable="performer" suffix=", act."><!--acteurs-->
+            <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" sort-separator=", ">
+              <name-part name="given"/><!--acteurs-->
+              <name-part name="family" font-variant="normal"/>
+            </name>
+          </names>
         </group>
       </else-if>
     </choose>
@@ -129,9 +129,9 @@
             <names variable="editor" prefix=", ">
               <label form="short" suffix=" "/>
               <name 
-            font-style="normal" and="text"
-            delimiter-precedes-et-al="never" 
-            delimiter-precedes-last="never">
+                font-style="normal" and="text"
+                delimiter-precedes-et-al="never" 
+                delimiter-precedes-last="never">
                 <name-part name="family" font-variant="small-caps"/>
               </name>
             </names>
@@ -139,9 +139,9 @@
           <else><!--S'il n'y a pas d'auteur en plus d'un éditeur, c'est que l'on ne parle pas d'une édition de source : dir.-->
             <names variable="editor" prefix=", dir. ">
               <name 
-            font-style="normal" and="text"
-            delimiter-precedes-et-al="never" 
-            delimiter-precedes-last="never">
+                font-style="normal" and="text"
+                delimiter-precedes-et-al="never" 
+                delimiter-precedes-last="never">
                 <name-part name="family" font-variant="small-caps"/>
               </name>
             </names>
@@ -749,22 +749,22 @@
               <text macro="company"/>
               <group delimiter=", ">
                 <text variable="title" form="short" font-style="italic"/>
-                <text term="cited" font-style="italic" suffix="."/>
+                <text term="cited" font-style="italic" suffix=". (n. X)"/>
                 <group delimiter=" ">
                   <text macro="locators"/>
                 </group>
               </group>
             </if>
-            <else><!--Pour tous les autres types-->
+            <else><!--Pour les autres types-->
               <group delimiter=", ">
-              <text macro="author"/>
+                <text macro="author"/>
                 <choose>
                   <if type="book graphic report map personal_communication interview motion_picture thesis broadcast manuscript" match="any">
                     <choose>
-                      <if variable="author" match="any"/><!--S'il y a un nom d'auteur, on ne cite pas le titre même abrégé❗ mais privilégier version signalée ci-dessous dans else-->
-                      <else>
-                        <text variable="title" form="short" font-style="italic"/>
-                      </else>
+                    <if variable="author" match="any"/>
+                    <else>
+                    <text variable="title" form="short" font-style="italic"/>
+                    </else>
                     </choose>
                   </if>
                   <else-if type="entry-dictionary">
@@ -792,11 +792,16 @@
                       </name>
                     </names>
                   </else-if>
-                  <else>
+                  <else><!--Pour tous les autres-->
+                    <choose>
+                    <if variable="author" match="any"/>
+                    <else>
                     <text variable="title" text-case="capitalize-first" form="short" quotes="true" font-style="normal"/>
+                    </else>
+                    </choose>
                   </else>
                 </choose>
-                <text term="cited" font-style="italic" suffix=". (n. X)"/><!--❗-->
+                <text term="cited" font-style="italic" suffix=". (n. X)"/>
                 <group delimiter=" ">
                   <text macro="locators"/>
                 </group>
