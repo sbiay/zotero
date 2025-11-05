@@ -788,6 +788,20 @@
               <text macro="accessed"/>
               <text macro="locators" prefix=", "/>
             </if>
+            <else-if type="entry-dictionary"><!--Pour les sources-->
+              <text macro="author" suffix=", "/>
+              <text macro="title"/>
+              <text macro="edition"/>
+              <text macro="editor"/>
+              <text macro="translator"/>
+              <text macro="source-container-title"/>
+              <text macro="source-container-editor"/>
+              <text macro="volume" prefix=", "/>
+              <text macro="place"/>
+              <text macro="yearpage"/>
+              <text macro="accessed"/>
+              <text macro="locators" prefix=", "/>
+            </else-if>
             <else><!--Pour tous les autres types-->
               <text macro="author" suffix=", "/>
               <text macro="title"/>
@@ -835,6 +849,26 @@
           <text macro="event"/>
           <text macro="place"/>
           <text macro="publisher"/>
+          <text macro="collection"/>
+          <text macro="accessed"/>
+          <text macro="page-bib"/>
+        </else-if>
+        <else-if type="entry-dictionary"><!--Pour les sources-->
+          <text macro="author-bib" suffix=", "/>
+          <text macro="title"/>
+          <text macro="edition"/>
+          <text macro="editor-bib"/>
+          <text macro="translator-bib"/>
+          <text macro="source-container-title"/>
+          <text macro="source-container-editor-bib"/>
+          <choose>
+            <if match="none" variable="collection-title">
+              <text macro="volume"/>
+            </if>
+          </choose>
+          <text macro="place"/>
+          <text macro="publisher"/>
+          <text macro="year-bib"/>
           <text macro="collection"/>
           <text macro="accessed"/>
           <text macro="page-bib"/>
