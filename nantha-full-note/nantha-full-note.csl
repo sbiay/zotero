@@ -749,14 +749,14 @@
               <text macro="company"/>
               <group delimiter=", ">
                 <text variable="title" form="short" font-style="italic"/>
-                <text term="cited" font-style="italic" suffix=". (n. X)"/>
+                <text term="cited" font-style="italic" prefix=" (" suffix=". n. X)"/>
                 <group delimiter=" ">
                   <text macro="locators"/>
                 </group>
               </group>
             </if>
             <else><!--Pour les autres types-->
-              <group delimiter=", ">
+              
                 <text macro="author"/>
                 <choose>
                   <if type="book graphic report map personal_communication interview motion_picture thesis broadcast manuscript" match="any">
@@ -767,31 +767,7 @@
                     </else>
                     </choose>
                   </if>
-                  <else-if type="entry-dictionary">
-                    <text variable="title" form="short" font-style="italic"/>
-                    <names variable="editor">
-                      <label form="short" suffix=" "/>
-                      <name 
-                        font-style="normal" and="text"
-                        delimiter-precedes-et-al="never" 
-                        delimiter-precedes-last="never"
-                        initialize-with="."
-                        et-al-min="1" et-al-use-first="1">
-                        <name-part name="family"/>
-                      </name>
-                    </names>
-                    <names variable="translator">
-                      <label form="short" suffix=" "/>
-                      <name 
-                        font-style="normal" and="text"
-                        delimiter-precedes-et-al="never" 
-                        delimiter-precedes-last="never"
-                        initialize-with="."
-                        et-al-min="1" et-al-use-first="1">
-                        <name-part name="family"/>
-                      </name>
-                    </names>
-                  </else-if>
+                  
                   <else><!--Pour tous les autres-->
                     <choose>
                     <if variable="author" match="any"/>
@@ -801,11 +777,9 @@
                     </choose>
                   </else>
                 </choose>
-                <text term="cited" font-style="italic" suffix=". (n. X)"/>
-                <group delimiter=" ">
-                  <text macro="locators"/>
-                </group>
-              </group>
+                <text term="cited" font-style="italic" prefix=" (" suffix=". n. X)"/>
+                <text macro="locators" prefix=", "/>
+               
             </else>
           </choose>
         </else-if>
