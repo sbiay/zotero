@@ -403,7 +403,7 @@
           </else>
         </choose>
       </if>
-      <else-if type="speech manuscript thesis broadcast" match="any">
+      <else-if type="speech manuscript broadcast" match="any">
         <choose>
           <if variable="publisher-place">
             <text variable="publisher-place" prefix=", "/>
@@ -414,7 +414,7 @@
         </choose>
       </else-if>
       <else-if type="article-magazine article-journal personal_communication interview graphic webpage" match="any"/>
-      <else-if type="book chapter motion_picture report entry-dictionary entry-encyclopedia map software" match="any">
+      <else-if type="book chapter motion_picture thesis report entry-dictionary entry-encyclopedia map software" match="any">
         <choose>
           <if variable="publisher-place">
             <text variable="publisher-place" prefix=", "/>
@@ -918,6 +918,25 @@
           </choose>
           <text macro="place"/>
           <text macro="publisher"/>
+          <text macro="year-bib"/>
+          <text macro="collection"/>
+          <text macro="accessed"/>
+          <text macro="page-bib"/>
+        </else-if>
+        <else-if type="thesis">
+          <text macro="author-bib" suffix=", "/>
+          <text macro="title"/>
+          <text macro="editor-bib"/>
+          <text macro="translator-bib"/>
+          <text macro="source-container-title"/>
+          <text macro="source-container-editor-bib"/>
+          <choose>
+            <if match="none" variable="collection-title">
+              <text macro="volume"/>
+            </if>
+          </choose>
+          <text macro="edition"/>
+          <text macro="place"/>
           <text macro="year-bib"/>
           <text macro="collection"/>
           <text macro="accessed"/>

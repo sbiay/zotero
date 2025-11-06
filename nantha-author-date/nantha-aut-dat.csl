@@ -361,7 +361,7 @@
           </else>
         </choose>
       </if>
-      <else-if type="speech manuscript thesis broadcast" match="any">
+      <else-if type="speech manuscript broadcast" match="any">
         <choose>
           <if variable="publisher-place">
             <text variable="publisher-place" prefix=", "/>
@@ -372,7 +372,7 @@
         </choose>
       </else-if>
       <else-if type="article-magazine article-journal personal_communication interview graphic webpage" match="any"/>
-      <else-if type="book chapter motion_picture report entry-dictionary entry-encyclopedia map software" match="any">
+      <else-if type="book chapter motion_picture thesis report entry-dictionary entry-encyclopedia map software" match="any">
         <choose>
           <if variable="publisher-place">
             <text variable="publisher-place" prefix=", "/>
