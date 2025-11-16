@@ -7,9 +7,9 @@
   demote-non-dropping-particle="sort-only"
   default-locale="fr-FR">
   <info>
-    <title>NantHA - note complète (1.2)</title>
-    <title-short>NantHA-full-note-1.2</title-short>
-    <id>NantHA-full-note-1.2</id>
+    <title>NantHA - note MD (1.2)</title>
+    <title-short>NantHA-MD-1.2</title-short>
+    <id>mon-odt-perso</id>
     <link href="http://www.zotero.org/styles/invisu" rel="template"/>
     <link href="http://www.zotero.org/styles/le-tapuscrit-note" rel="template"/>
     <link href="http://www.zotero.org/styles/traces" rel="template"/>
@@ -52,8 +52,7 @@
             sort-separator=" ">
             <name-part name="family" font-variant="normal"/>
           </name>
-          <et-al font-style="italic"/>
-        </names>
+                  </names>
       </if>
     </choose>
   </macro>
@@ -63,16 +62,16 @@
         <choose>
           <if type="software speech" match="any"><!--Dans la biblio, les responsables institutionnels de ressources numériques sont en bas de casse, ainsi que les organisateurs d'événement non publiés-->
             <names variable="author" prefix=", dir. ">
-              <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" sort-separator=", ">
-                <name-part name="given"/>
+              <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" sort-separator=" ">
+                <name-part name="given" prefix=" (" suffix=")"/>
                 <name-part name="family" font-variant="normal"/>
               </name>
             </names>
           </if>
           <else-if type="webpage"><!--L'auteur d'une page web est une organisation-->
             <names variable="author" suffix=", ">
-              <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" sort-separator=", ">
-                <name-part name="given"/>
+              <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" sort-separator=" ">
+                <name-part name="given" prefix=" (" suffix=")"/>
                 <name-part name="family" font-variant="small-caps"/>
               </name>
             </names>
@@ -84,9 +83,9 @@
                 and="text"
                 delimiter-precedes-et-al="never" delimiter-precedes-last="never"
                 name-as-sort-order="all"
-                sort-separator=", ">
+                sort-separator=" ">
                 <name-part name="family" font-variant="small-caps"/>
-                <name-part name="given"/>
+                <name-part name="given" prefix=" (" suffix=")"/>
               </name>
             </names>
           </else>
@@ -95,13 +94,13 @@
       <else-if variable="director"><!--pour les metteurs en scène, s'applique à enregistrement vidéo (motion_picture)-->
         <group delimiter=", ">
           <names variable="director" suffix=", réal."><!--Typo empruntée à BNF-CG-->
-            <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" sort-separator=", ">
+            <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" sort-separator=" ">
               <name-part name="given" /><!--L'espace avant la fermante empêche l'ajout de parenthèses par le script python-->
               <name-part name="family" font-variant="normal"/>
             </name>
           </names>
           <names variable="performer" suffix=", act."><!--acteurs-->
-            <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" sort-separator=", ">
+            <name font-style="normal" and="text" delimiter-precedes-et-al="never" delimiter-precedes-last="never" sort-separator=" ">
               <name-part name="given"/><!--acteurs-->
               <name-part name="family" font-variant="normal"/>
             </name>
@@ -159,8 +158,7 @@
                 et-al-min="4" et-al-use-first="3"
                 initialize-with=".">
             </name>
-            <et-al font-style="italic"/>
-          </names>
+                      </names>
         </if>
       <else>
         <choose>
@@ -172,8 +170,7 @@
                 et-al-min="4" et-al-use-first="3"
                 initialize-with=".">
               </name>
-              <et-al font-style="italic"/>
-            </names>
+                          </names>
           </if>
           <else><!--S'il n'y a pas d'auteur en plus d'un éditeur, c'est que l'on ne parle pas d'une édition de source : dir.-->
             <names variable="editor" prefix=", dir. ">
@@ -182,8 +179,7 @@
                 et-al-min="4" et-al-use-first="3"
                 initialize-with=".">
               </name>
-              <et-al font-style="italic"/>
-            </names>
+                          </names>
           </else>
         </choose>
       </else>
@@ -210,10 +206,10 @@
   <macro name="title">
     <choose>
       <if type="book" match="any">
-        <text variable="title" text-case="capitalize-first" font-style="italic"/>
+        <text variable="title" text-case="capitalize-first" prefix="*" suffix="*"/>
       </if>
       <else-if type="graphic personal_communication interview" match="any">
-        <text variable="title" text-case="capitalize-first" font-style="italic"/>
+        <text variable="title" text-case="capitalize-first" prefix="*" suffix="*"/>
         <text macro="date"/>
         <group delimiter=", " prefix=", " suffix=".">
           <text macro="interviewer"/>
@@ -224,29 +220,29 @@
       </else-if>
       <else-if type="motion_picture" match="any">
         <group delimiter=", ">
-          <text variable="title" text-case="capitalize-first" font-style="italic"/>
+          <text variable="title" text-case="capitalize-first" prefix="*" suffix="*"/>
           <text variable="medium"/>
         </group>
       </else-if>
       <else-if type="article-journal article-magazine article-newspaper" match="any">
         <group delimiter=", ">
           <text variable="title" text-case="capitalize-first" quotes="true" font-style="normal"/>
-          <text variable="container-title" font-style="italic"/>
+          <text variable="container-title" prefix="*" suffix="*"/>
         </group>
       </else-if>
       <else-if type="thesis broadcast report" match="any">
         <group delimiter=", ">
-          <text variable="title" text-case="capitalize-first" font-style="italic"/>
+          <text variable="title" text-case="capitalize-first" prefix="*" suffix="*"/>
           <text variable="genre"/>
           <text variable="publisher"/>
-          <text variable="container-title" font-style="italic"/>
+          <text variable="container-title" prefix="*" suffix="*"/>
           <text macro="number"/>
         </group>
       </else-if>
       <else-if type="manuscript" match="any">
         <group>
           <group suffix=",">
-            <text variable="title" text-case="capitalize-first" font-style="italic"/>
+            <text variable="title" text-case="capitalize-first" prefix="*" suffix="*"/>
           </group>
           <text variable="genre" prefix=" "/>
         </group>
@@ -256,7 +252,7 @@
           <group suffix=", ">
             <text variable="title" text-case="capitalize-first" quotes="true"/>
           </group>
-          <text variable="container-title" text-case="capitalize-first" font-style="italic"/>
+          <text variable="container-title" text-case="capitalize-first" prefix="*" suffix="*"/>
         </group>
       </else-if>
       <else-if type="paper-conference" match="any">
@@ -264,7 +260,7 @@
           <group suffix=", ">
             <text variable="title" text-case="capitalize-first" quotes="true"/>
           </group>
-          <text variable="container-title" text-case="capitalize-first" font-style="italic"/>
+          <text variable="container-title" text-case="capitalize-first" prefix="*" suffix="*"/>
           <text macro="event"/>
         </group>
       </else-if>
@@ -272,18 +268,18 @@
         <group delimiter=", ">
           <text variable="title" text-case="capitalize-first" quotes="true" font-style="normal"/>
           <text variable="genre"/>
-          <text variable="container-title" font-style="italic"/>
+          <text variable="container-title" prefix="*" suffix="*"/>
         </group>
       </else-if>
       <else-if type="map" match="any">
         <group delimiter=", ">
-          <text variable="title" text-case="capitalize-first" font-style="italic"/>
+          <text variable="title" text-case="capitalize-first" prefix="*" suffix="*"/>
           <text variable="genre"/>
           <text variable="edition"/>
         </group>
       </else-if>
       <else>
-        <text variable="title" text-case="capitalize-first" font-style="italic"/>
+        <text variable="title" text-case="capitalize-first" prefix="*" suffix="*"/>
       </else>
     </choose>
   </macro>
@@ -291,7 +287,7 @@
   <macro name="source-container-title"><!--Titre de l'ouvrage contenant l'édition-->
     <choose>
       <if type="entry-dictionary" match="any">
-        <text variable="container-title" font-style="italic" prefix=", dans "/>
+        <text variable="container-title"  prefix=", dans *" suffix="*"/>
       </if>
     </choose>
   </macro>
@@ -301,8 +297,7 @@
         font-style="normal" and="text"
         et-al-min="3" et-al-use-first="2" initialize-with=".">
       </name>
-      <et-al font-style="italic"/>
-    </names>
+          </names>
   </macro>
   <macro name="source-container-editor-bib"><!--Editeur scientifique de l'ouvrage contenant l'édition-->
     <names variable="collection-editor" prefix=", dir. ">
@@ -317,11 +312,11 @@
         <choose>
           <if is-numeric="edition">
             <group delimiter=" ">
-              <number variable="edition" prefix=" [1re éd. " suffix="]"/>
+              <number variable="edition" prefix=" [1re éd. " suffix="\]"/>
             </group>
           </if>
           <else>
-            <text variable="edition" prefix=" [" suffix="]"/>
+            <text variable="edition" prefix=" \[" suffix="\]"/>
           </else>
         </choose>
       </if>
@@ -462,10 +457,10 @@
         </group>
       </if>
       <else-if type="article-journal">
-        <text variable="collection-title" prefix=", " font-style="italic"/>
+        <text variable="collection-title" prefix=", *" suffix="*"/>
       </else-if>
       <else>
-        <text variable="collection-title" suffix=", " font-style="italic"/>
+        <text variable="collection-title" prefix="*" suffix="*, "/>
       </else>
     </choose>
   </macro>
@@ -717,54 +712,80 @@
     </group>
   </macro>
   <citation et-al-min="4" et-al-use-first="3" et-al-subsequent-min="3" et-al-subsequent-use-first="1">
-    <layout suffix="" delimiter="&#160;; ">
+    <layout suffix="." delimiter="&#160;; ">
       <choose>
         <if position="ibid-with-locator">
           <group delimiter=", ">
-            <text term="ibid" text-case="capitalize-first" font-style="italic" suffix="."/>
+            <text term="ibid" text-case="capitalize-first" prefix="*" suffix="*."/>
             <text macro="locators"/>
           </group>
         </if>
         <else-if position="ibid">
-          <text term="ibid" text-case="capitalize-first" font-style="italic"/>
+          <text term="ibid" text-case="capitalize-first" prefix="*" suffix="*"/>
         </else-if>
         <else-if position="subsequent">
           <choose>
             <if type="speech software"><!--Pour le type présentation : événement scientifique non publié ; Pour le type Logiciel : ressource nativement numérique-->
               <text macro="company"/>
               <group delimiter=", ">
-                <text variable="title" form="short" font-style="italic"/>
-                <text term="cited" font-style="italic" prefix=" (" suffix=". n. X)"/>
+                <text variable="title" form="short" prefix="*" suffix="*"/>
+                <text term="cited" prefix="*" suffix="*."/>
                 <group delimiter=" ">
                   <text macro="locators"/>
                 </group>
               </group>
             </if>
             <else><!--Pour les autres types-->
-              
+              <!--a3-->
+              <group delimiter=", ">
+              <!--a3-->
                 <text macro="author"/>
                 <choose>
                   <if type="book graphic report map personal_communication interview motion_picture thesis broadcast manuscript" match="any">
-                    <choose>
-                    <if variable="author" match="any"/>
-                    <else>
-                    <text variable="title" form="short" font-style="italic"/>
-                    </else>
-                    </choose>
+                    <!--a1-->
+                      <text variable="title" form="short" prefix="*" suffix="*"/>
+                    <!--a1-->
                   </if>
-                  
+                  <!--a5-->
+                  <else-if type="entry-dictionary">
+                    <text variable="title" form="short" prefix="*" suffix="*"/>
+                    <names variable="editor">
+                      <label form="short" suffix=" "/>
+                      <name 
+                        font-style="normal" and="text"
+                        delimiter-precedes-et-al="never" 
+                        delimiter-precedes-last="never"
+                        initialize-with="."
+                        et-al-min="1" et-al-use-first="1">
+                        <name-part name="family"/>
+                      </name>
+                    </names>
+                    <names variable="translator">
+                      <label form="short" suffix=" "/>
+                      <name 
+                        font-style="normal" and="text"
+                        delimiter-precedes-et-al="never" 
+                        delimiter-precedes-last="never"
+                        initialize-with="."
+                        et-al-min="1" et-al-use-first="1">
+                        <name-part name="family"/>
+                      </name>
+                    </names>
+                  </else-if>
+                  <!--a5-->
                   <else><!--Pour tous les autres-->
-                    <choose>
-                    <if variable="author" match="any"/>
-                    <else>
+                    <!--a2-->
                     <text variable="title" text-case="capitalize-first" form="short" quotes="true" font-style="normal"/>
-                    </else>
-                    </choose>
+                    <!--a2-->
                   </else>
                 </choose>
-                <text term="cited" font-style="italic" prefix=" (" suffix=". n. X)"/>
-                <text macro="locators" prefix=", "/>
-               
+                <text term="cited" prefix="*" suffix="*."/>
+                <!--a4-->
+                <text macro="locators"/>
+                <!--a4-->
+               <!--a3-->
+              </group>
+               <!--a3-->
             </else>
           </choose>
         </else-if>
