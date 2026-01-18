@@ -312,11 +312,11 @@
         <choose>
           <if is-numeric="edition">
             <group delimiter=" ">
-              <number variable="edition" prefix=" [1re éd. " suffix="\]"/>
+              <number variable="edition" prefix=" [1re éd. " suffix="]"/>
             </group>
           </if>
           <else>
-            <text variable="edition" prefix=" \[" suffix="\]"/>
+            <text variable="edition" prefix=" [" suffix="]"/>
           </else>
         </choose>
       </if>
